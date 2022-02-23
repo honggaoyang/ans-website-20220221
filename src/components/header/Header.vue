@@ -1,6 +1,7 @@
 <template>
   <div class="menu_wrap">
     <!-- mouseenter，mouseleave -->
+    <!-- <div class="logo">LOGO</div> -->
     <div class="menu_item">
       <router-link to="/">首页</router-link>
     </div>
@@ -54,8 +55,9 @@
       </div>
     </div>
     <div class="menu_item">
-      <router-link to="/concat">联系我们</router-link>
+      <router-link to="/contact">联系我们</router-link>
     </div>
+    <!-- <div class="contact">400-9699-180</div> -->
   </div>
 </template>
 

@@ -5,7 +5,7 @@ import Course from '@/views/course/Course'
 import Ans from '@/views/ans/Ans'
 import Brand from '@/views/brand/Brand'
 import Product from '@/views/product/Product'
-import Concat from '@/views/concat/Concat'
+import Contact from '@/views/contact/Contact'
 
 Vue.use(Router)
 
@@ -37,9 +37,9 @@ export default new Router({
       component: Product
     },
     {
-      path: '/concat',
-      name: 'concat',
-      component: Concat
+      path: '/contact',
+      name: 'contact',
+      component: Contact
     },
   ]
 })

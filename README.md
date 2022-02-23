@@ -31,3 +31,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 npm i element-ui -S
 npm install babel-plugin-component -D
 npm install babel-preset-es2015 --save-dev
+
+
+全屏大小设置。
+
