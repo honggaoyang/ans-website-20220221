@@ -20,5 +20,8 @@ export default {
 
 <style>
 /* 引入全局样式 */
-@import url("./assets/Global.css");
+@import url("./assets/css/Global.css");
+
+/* 引入字体图标 */
+@import url("./assets/fonts/iconfont.css");
 </style>
