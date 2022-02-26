@@ -50,46 +50,52 @@
           <div class="lf_wrap">
             <div class="item">
               <p>意向课程</p>
-              <select>
-                <option value="0">请选择</option>
-                <option value="1">化妆</option>
-                <option value="2">美甲</option>
-                <option value="3">美容</option>
+              <select v-model="info.course">
+                <option value="请选择">请选择</option>
+                <option value="化妆">化妆</option>
+                <option value="美甲">美甲</option>
+                <option value="美容">美容</option>
               </select>
             </div>
             <div class="item">
               <p>手机<span>*</span></p>
-              <input type="text" />
+              <input type="text" v-model="info.phone" />
             </div>
             <div class="item">
               <p>城市<span>*</span></p>
-              <input type="text" />
+              <input type="text" v-model="info.city" />
             </div>
           </div>
           <div class="rt_wrap">
             <div class="item">
               <p>姓名<span>*</span></p>
-              <input type="text" />
+              <input type="text" v-model="info.name" />
             </div>
             <div class="item">
               <p>验证码<span>*</span></p>
               <div class="code_wrap">
-                <input type="text" />
+                <input type="text" v-model="info.code" />
                 <button>获取验证码</button>
               </div>
             </div>
             <div class="item">
               <p>邮箱</p>
-              <input type="text" />
+              <input type="text" v-model="info.email" />
             </div>
           </div>
         </div>
         <div class="mess_wrap">
           <p>留言<span>*</span></p>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            v-model="info.msg"
+          ></textarea>
         </div>
         <div class="btn">
-          <button>提交</button>
+          <button @click="handleInfo">提交</button>
         </div>
       </div>
     </div>
@@ -103,10 +109,37 @@ export default {
   mixins: [swiperMixin],
   data() {
     return {
+      info: {
+        course: "请选择",
+        phone: "",
+        city: "",
+        name: "",
+        code: "",
+        email: "",
+        msg: "",
+      },
       swiperOption: {
         slidesPerView: 3.5,
       },
     };
+  },
+  methods: {
+    handleInfo() {
+      console.log(JSON.parse(JSON.stringify(this.info)));
+      if (this.info.phone.trim() === "") {
+        alert("手机号不能为空");
+      } else if (this.info.city.trim() === "") {
+        alert("请填写城市信息");
+      } else if (this.info.msg.trim() === "") {
+        alert("请填写留言");
+      } else if (this.info.name.trim() === "") {
+        alert("请填写姓名");
+      } else if (this.info.code.trim() === "") {
+        alert("请填写验证码");
+      } else {
+        alert("提交成功！");
+      }
+    },
   },
 };
 </script>

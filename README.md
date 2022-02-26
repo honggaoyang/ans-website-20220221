@@ -33,7 +33,7 @@ npm install babel-plugin-component -D
 npm install babel-preset-es2015 --save-dev
 
 
-全屏大小设置。
+
 
 
 https://github.com/surmon-china/vue-awesome-swiper   低版本swiper
