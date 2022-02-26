@@ -33,7 +33,7 @@
             </div>
             <div>
               <router-link to="/">教育科技</router-link>
-              <router-link to="/">际达生物</router-link>
+              <router-link to="/jd">际达生物</router-link>
               <router-link to="/">际缘互联网</router-link>
               <router-link to="/">美容科技馆</router-link>
               <router-link to="/">神树科技</router-link>
