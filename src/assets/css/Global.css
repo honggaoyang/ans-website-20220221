@@ -12,7 +12,7 @@
 body {
     background-color: #FFFFFF;
     max-width: 1920px;
-    min-width: 1450px;
+    min-width: 1900px;
     margin: auto;
 }
 
@@ -23,4 +23,14 @@ a{
 
 img{
     vertical-align: middle;
+}
+
+
+/* 轮播公共样式 */
+.course_swiper .hide {
+  opacity: 0;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  transition: opacity 0.5s;
 }

@@ -279,12 +279,4 @@ export default {
     }
   }
 }
-
-.course_swiper .hide {
-  opacity: 0;
-}
-.swiper-button-next,
-.swiper-button-prev {
-  transition: opacity 0.5s;
-}
 </style>
