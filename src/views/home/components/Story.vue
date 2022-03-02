@@ -45,6 +45,10 @@ export default {
   .tit_wrap {
     text-align: center;
     padding-top: 100px;
+    img {
+      width: 856px;
+      height: 163px;
+    }
     h1 {
       font-size: 55px;
       color: #ffffff;
@@ -54,6 +58,8 @@ export default {
   .cont_wrap {
     padding-top: 80px;
     .course_swiper {
+      width: 100%;
+      height: 964px;
       img {
         width: 100%;
       }

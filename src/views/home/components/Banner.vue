@@ -27,7 +27,7 @@ export default {
   data() {
     return {
       swiperOption: {
-        loop: false, // 是否循环
+        // loop: false, // 是否循环
       },
     };
   },
@@ -36,8 +36,9 @@ export default {
 <style lang="less" scoped>
 .course_swiper {
   width: 100%;
+  height: 873px;
 }
 .course_swiper img {
-  width: 100%;
+  // width: 100%;
 }
 </style>

@@ -4,7 +4,7 @@
     <div @mouseenter="mouseEnter" @mouseleave="mouseLeave">
       <swiper ref="mySwiper" class="course_swiper" :options="swiperOption">
         <swiper-slide>
-          <img src="@/assets/images/ans/ans_banner1.jpg" alt="" />
+          <img src="@/assets/images/ans/ans_banner1.jpg" alt="探索ans banner" />
         </swiper-slide>
         <div
           class="swiper-button-prev swiper-button-white"
@@ -25,7 +25,11 @@
       <h1>集团简介</h1>
       <div class="cont_wrap">
         <div class="lf_box">
-          <img src="@/assets/images/ans/ans_intro.png" alt="集团简介" />
+          <img
+            class="intro_img"
+            src="@/assets/images/ans/ans_intro.png"
+            alt="集团简介"
+          />
           <div class="line"></div>
           <h3>扬美中国 妆亮世界</h3>
           <img
@@ -111,8 +115,9 @@ export default {
 <style lang="less" scoped>
 .course_swiper {
   width: 100%;
+  height: 694px;
   img {
-    width: 100%;
+    // width: 100%;
   }
 }
 
@@ -132,6 +137,11 @@ export default {
     display: flex;
     .lf_box {
       width: 50%;
+
+      .intro_img {
+        width: 614px;
+        height: 151px;
+      }
       .line {
         width: 100px;
         height: 3px;
@@ -201,11 +211,20 @@ export default {
     width: 800px;
     display: flex;
     justify-content: flex-end;
+    img {
+      width: 682px;
+      height: 995px;
+    }
   }
   .cont_box {
     flex: 1;
     .zqsEn {
       margin-top: 80px;
+      img {
+        width: 438px;
+        height: 187px;
+        margin-left: -15px;
+      }
     }
     article {
       color: #ffffff;

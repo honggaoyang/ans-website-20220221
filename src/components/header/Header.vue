@@ -11,14 +11,14 @@
         <router-link to="/">首页</router-link>
       </div>
       <div class="menu_item">
-        <router-link to="/course">课程分类</router-link>
+        <router-link to="/course/all">课程分类</router-link>
         <div class="subMenu_wrap">
-          <router-link to="/">时尚彩妆</router-link>
-          <router-link to="/">潮流美甲</router-link>
-          <router-link to="/">美容护肤</router-link>
-          <router-link to="/">精品半永久</router-link>
-          <router-link to="/">美妆达人全能班</router-link>
-          <router-link to="/">高端摄影</router-link>
+          <router-link to="/course/hz">时尚彩妆</router-link>
+          <router-link to="/course/mj">潮流美甲</router-link>
+          <router-link to="/course/mr">美容护肤</router-link>
+          <router-link to="/course/byj">精品半永久</router-link>
+          <router-link to="/course/qn">美妆达人全能班</router-link>
+          <router-link to="/course/mf">时尚美发</router-link>
         </div>
       </div>
       <div class="menu_item">
@@ -120,8 +120,8 @@ export default {};
         padding: 0 15px;
         // transition:all 2s;  display 不支持
         a {
-          line-height: 36px;
-          font-size: 12px;
+          line-height: 45px;
+          font-size: 18px;
           padding: 0 10px;
           white-space: nowrap;
           display: block;

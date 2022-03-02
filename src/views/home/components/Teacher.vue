@@ -146,6 +146,10 @@ export default {
   .tit_wrap {
     text-align: center;
     padding-top: 80px;
+    img {
+      width: 856px;
+      height: 163px;
+    }
     h1 {
       font-size: 55px;
       color: #000000;
@@ -155,6 +159,8 @@ export default {
   .cont_wrap {
     margin-top: 80px;
     .course_swiper {
+      width: 100%;
+      height: 1245px;
       .tea_box {
         display: flex;
         .tea_cont {
@@ -182,6 +188,7 @@ export default {
           flex: 1;
           img {
             width: 100%;
+            min-height: 622px;
             vertical-align: middle;
           }
         }

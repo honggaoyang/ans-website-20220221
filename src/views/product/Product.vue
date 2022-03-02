@@ -2,7 +2,11 @@
   <div>
     <!-- banner -->
     <div @mouseenter="mouseEnter" @mouseleave="mouseLeave">
-      <swiper ref="mySwiper" class="course_swiper" :options="swiperOption">
+      <swiper
+        ref="mySwiper"
+        class="course_swiper banner_swiper"
+        :options="swiperOption"
+      >
         <swiper-slide>
           <img src="@/assets/images/product/product_banner1.jpg" alt="" />
         </swiper-slide>
@@ -92,6 +96,10 @@ export default {
 </script>
 
  <style lang="less" scoped>
+.banner_swiper {
+  width: 100%;
+  height: 1356px;
+}
 .stuWork_wrap {
   background-color: #000000;
   width: 100%;

@@ -151,6 +151,10 @@ export default {
   .tit_wrap {
     text-align: center;
     padding-top: 100px;
+    img {
+      width: 856px;
+      height: 163px;
+    }
     h1 {
       font-size: 55px;
       color: #ffffff;
@@ -162,6 +166,7 @@ export default {
     margin-bottom: 100px;
     .course_swiper {
       width: 100%;
+      height: 770px;
       img {
         width: 461px;
         height: 689px;

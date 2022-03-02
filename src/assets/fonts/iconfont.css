@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1645605422920') format('truetype');
+  src: url('iconfont.ttf?t=1646017924030') format('truetype');
 }
 
 .iconfont {
@@ -15,12 +15,28 @@
   content: "\f0106";
 }
 
+.icon-weibiaoti1:before {
+  content: "\e643";
+}
+
 .icon-kefu:before {
   content: "\e65a";
 }
 
+.icon-caizhuang--:before {
+  content: "\e686";
+}
+
 .icon-zy_yuyue:before {
   content: "\e50b";
+}
+
+.icon-yuanquan:before {
+  content: "\e63e";
+}
+
+.icon-RectangleCopy:before {
+  content: "\e6a6";
 }
 
 .icon-24gf-phoneLoudspeaker:before {

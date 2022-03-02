@@ -34,7 +34,8 @@
     flex: 1;
     text-align: right;
     img {
-      width: 100%;
+      width: 941px;
+      height: 1202px;
     }
   }
   .cont_wrap {
@@ -43,6 +44,8 @@
     padding: 230px 0 0 50px;
     img {
       margin-left: -13px;
+      width: 635px;
+      height: 165px;
     }
     .tit {
       font-size: 48px;
@@ -80,6 +83,7 @@
   background-color: #000000;
   img {
     width: 100%;
+    height: 995px;
   }
 }
 </style>

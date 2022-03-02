@@ -40,4 +40,6 @@ https://github.com/surmon-china/vue-awesome-swiper   低版本swiper
 npm install swiper vue-awesome-swiper --save
  
 
+<!-- 检测IE浏览器版本，版本太低给出提示 -->
+https://www.cnblogs.com/ordinary-yolanda/p/13541264.html
 
