@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Header />
-    <router-view />
+    <transition>
+      <router-view />
+    </transition>
     <Footer />
   </div>
 </template>
@@ -24,4 +26,24 @@ export default {
 
 /* 引入字体图标 */
 @import url("./assets/fonts/iconfont.css");
+
+.v-enter {
+  opacity: 1;
+}
+.v-enter-active {
+  transition: 0.8s;
+}
+.v-enter-to {
+  opacity: 1;
+}
+.v-leave {
+  opacity: 1;
+}
+.v-leave-to {
+  opacity: 1;
+}
+.v-leave-active {
+  opacity: 1;
+  transition: 0s;
+}
 </style>
