@@ -6,7 +6,7 @@ export default {
             //swiper轮播配置
             swiperOption: {
                 slidesPerView: 1, // 显示多少屏
-                spaceBetween: 0,// 间隔
+                spaceBetween: 30,// 间隔
                 loop: true,// 是否循环
                 // 左右翻页
                 navigation: {

@@ -15,28 +15,38 @@
               />
             </div>
             <div class="tea_cont">
-              <p class="name"><strong>马若寒</strong>老师</p>
-              <p class="cont">马若寒马若寒马若寒马若寒马若寒</p>
+              <p class="name">马若寒</p>
+              <p class="cont">明星化妆师</p>
+              <p class="cont">美学研究院副院长</p>
             </div>
             <div class="tea_img">
               <img
-                src="@/assets/images/home/home_teacher1.png"
-                alt="李时珍老师"
+                src="@/assets/images/home/home_teacher2.png"
+                alt="马若寒老师"
               />
             </div>
             <div class="tea_cont">
-              <p class="name"><strong>李时珍</strong>老师</p>
-              <p class="cont">
-                李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍
-              </p>
+              <p class="name">马若寒</p>
+              <p class="cont">明星化妆师</p>
+              <p class="cont">美学研究院副院长</p>
+            </div>
+            <div class="tea_img">
+              <img
+                src="@/assets/images/home/home_teacher2.png"
+                alt="马若寒老师"
+              />
+            </div>
+            <div class="tea_cont">
+              <p class="name">马若寒</p>
+              <p class="cont">明星化妆师</p>
+              <p class="cont">美学研究院副院长</p>
             </div>
           </div>
           <div class="tea_box">
             <div class="tea_cont">
-              <p class="name"><strong>李时珍</strong>老师</p>
-              <p class="cont">
-                李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍
-              </p>
+              <p class="name">马若寒</p>
+              <p class="cont">明星化妆师</p>
+              <p class="cont">美学研究院副院长</p>
             </div>
             <div class="tea_img">
               <img
@@ -45,10 +55,20 @@
               />
             </div>
             <div class="tea_cont">
-              <p class="name"><strong>李时珍</strong>老师</p>
-              <p class="cont">
-                李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍李时珍
-              </p>
+              <p class="name">马若寒</p>
+              <p class="cont">明星化妆师</p>
+              <p class="cont">美学研究院副院长</p>
+            </div>
+            <div class="tea_img">
+              <img
+                src="@/assets/images/home/home_teacher1.png"
+                alt="李时珍老师"
+              />
+            </div>
+            <div class="tea_cont">
+              <p class="name">马若寒</p>
+              <p class="cont">明星化妆师</p>
+              <p class="cont">美学研究院副院长</p>
             </div>
             <div class="tea_img">
               <img
@@ -58,58 +78,7 @@
             </div>
           </div>
         </swiper-slide>
-        <swiper-slide>
-          <div class="tea_box">
-            <div class="tea_img">
-              <img
-                src="@/assets/images/home/home_teacher2.png"
-                alt="李时珍老师"
-              />
-            </div>
-            <div class="tea_cont">
-              <p class="name"><strong>马若寒老师</strong>老师</p>
-              <p class="cont">
-                马若寒老师马若寒老师马若寒老师马若寒老师马若寒老师
-              </p>
-            </div>
-            <div class="tea_img">
-              <img
-                src="@/assets/images/home/home_teacher2.png"
-                alt="李时珍老师"
-              />
-            </div>
-            <div class="tea_cont">
-              <p class="name"><strong>马若寒老师</strong>老师</p>
-              <p class="cont">
-                马若寒老师马若寒老师马若寒老师马若寒老师马若寒老师马若寒老师
-              </p>
-            </div>
-          </div>
-          <div class="tea_box">
-            <div class="tea_cont">
-              <p class="name"><strong>李时珍</strong>老师</p>
-              <p class="cont">
-                马若寒老师马若寒老师马若寒老师马若寒老师马若寒老师马若寒老师
-              </p>
-            </div>
-            <div class="tea_img">
-              <img
-                src="@/assets/images/home/home_teacher2.png"
-                alt="马若寒老师"
-              />
-            </div>
-            <div class="tea_cont">
-              <p class="name"><strong>李时珍</strong>老师</p>
-              <p class="cont">马若寒老师马若寒老师马若寒老师马若寒老师</p>
-            </div>
-            <div class="tea_img">
-              <img
-                src="@/assets/images/home/home_teacher2.png"
-                alt="马若寒老师"
-              />
-            </div>
-          </div>
-        </swiper-slide>
+
         <div
           class="swiper-button-prev"
           :class="{ hide: !mouseIsEnter }"
@@ -142,16 +111,15 @@ export default {
 <style lang="less" scoped>
 .teacher_sec {
   background-color: #efefef;
-  padding-bottom: 100px;
   .tit_wrap {
     text-align: center;
-    padding-top: 80px;
+    padding-top: 50px;
     img {
-      width: 856px;
-      height: 163px;
+      width: 570px;
+      height: 108px;
     }
     h1 {
-      font-size: 55px;
+      font-size: 40px;
       color: #000000;
       font-weight: 400;
     }
@@ -160,7 +128,7 @@ export default {
     margin-top: 80px;
     .course_swiper {
       width: 100%;
-      height: 1245px;
+      height: 890px;
       .tea_box {
         display: flex;
         .tea_cont {
@@ -171,24 +139,21 @@ export default {
           justify-content: center;
           align-items: center;
           .name {
-            strong {
-              font-size: 60px;
-              font-weight: 600;
-              margin-right: 15px;
-            }
             font-size: 40px;
+            font-weight: 500;
+            margin-bottom: 30px;
           }
           .cont {
-            width: 60%;
-            font-size: 20px;
-            margin-top: 50px;
+            font-size: 18px;
+            padding: 0 30px;
+            line-height: 30px;
           }
         }
         .tea_img {
           flex: 1;
           img {
             width: 100%;
-            min-height: 622px;
+            height: 420px;
             vertical-align: middle;
           }
         }

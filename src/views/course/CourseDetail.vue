@@ -227,6 +227,9 @@ export default {
     return {
       bannerDate: [], //banner数据
       courseDetailDate: [], // 课程详情数据
+      swiperOption: {
+        spaceBetween: 0,
+      },
     };
   },
 
@@ -1664,31 +1667,31 @@ export default {
               id: 1,
               tit: "专业美发师基础学",
               cont: "毛发理学,头皮理学、毛发结构学、脸型和头型的认识、国际标准七大要素、经典分区点线面之间的关系、日式水洗,干洗",
-              img: "mf/course_detail_mf1_1.png",
+              img: "mf/course_detail_mf1_8.jpg",
             },
             {
               id: 2,
               tit: "吹风造型系列",
               cont: "吹风工具的认识与使用、男士吹风造型男士蓬松造型、男士吹风造型男士定位造型、女士吹风造型中式大卷、女士吹风造型吹直吹蓬",
-              img: "mf/course_detail_mf1_2.png",
+              img: "mf/course_detail_mf1_1.jpg",
             },
             {
               id: 3,
               tit: "染发系列",
               cont: "染发的工具和染膏,双氧的认识、染发的注意事项、染色操作全流程、国际染膏颜色代码的认识",
-              img: "mf/course_detail_mf1_3.png",
+              img: "mf/course_detail_mf1_6.jpg",
             },
             {
               id: 4,
               tit: "剪发系列",
               cont: "剪发工具的认识以及运用、经典的发型分区、男士电推操作以及使用、均等裁剪、女士长碎发造型、女士刘海分区、男士板寸圆寸毛寸、女士短发造型、女士日韩发型烫发系列、国际四大排版操作以及运用方法、国际标准离子烫,冷烫,热烫",
-              img: "mf/course_detail_mf1_4.png",
+              img: "mf/course_detail_mf1_3.jpg",
             },
             {
               id: 5,
               tit: "经营管理课程",
               cont: "美发师的职业要求、美发店工作的相关流程和注意事项、礼仪学",
-              img: "mf/course_detail_mf1_5.png",
+              img: "mf/course_detail_mf1_4.jpg",
             },
           ];
           break;
@@ -1699,37 +1702,37 @@ export default {
               id: 1,
               tit: "专业美发师基础学",
               cont: "毛发理学,头皮理学、毛发结构学、脸型和头型的认识、国际标准七大要素、经典分区点线面之间的关系、日式水洗,干洗",
-              img: "mf/course_detail_mf2_1.png",
+              img: "mf/course_detail_mf1_8.jpg",
             },
             {
               id: 2,
               tit: "吹风造型系列",
               cont: "吹风工具的认识与使用、男士吹风造型男士蓬松造型、男士吹风造型男士定位造型、女士吹风造型中式大卷、女士吹风造型吹直吹蓬、男士吹风造型男士时尚吹风造型、女士吹风造型日韩吹风造型、女士吹风造型手吹大卷",
-              img: "mf/course_detail_mf2_2.png",
+              img: "mf/course_detail_mf1_1.jpg",
             },
             {
               id: 3,
               tit: "染发系列",
               cont: "染发的工具和染喜,双氧的认识、染发的注意事项、染色操作全流程、国际染膏颜色代码的认识、商业片染的操作流程、染色褪色白发覆盖、多种补色操作流程",
-              img: "mf/course_detail_mf2_3.png",
+              img: "mf/course_detail_mf1_6.jpg",
             },
             {
               id: 4,
               tit: "剪发系列",
               cont: "剪发工具的认识以及运用、经典的发型分区、男士电推操作以及使用、均等栽剪、女士长碎发、女士刘海分区、男士板寸,圆寸,毛寸、女士短发、女士日韩发型、女士日韩时尚发型、男士日韩时尚发型、沙宣B0B经典裁剪、沙宣经典组合裁剪、盖白发理论、点线面体理论、角度与切口、站姿站位、经典三角形45'C推挤重量、短碎发的剪法",
-              img: "mf/course_detail_mf2_4.png",
+              img: "mf/course_detail_mf1_3.jpg",
             },
             {
               id: 5,
               tit: "烫发系列",
               cont: "国际四大排版操作以及运用方法、国际标准离子烫,冷烫,热烫、日韩空气灵感烫、欧美立体数码烫",
-              img: "mf/course_detail_mf2_5.png",
+              img: "mf/course_detail_mf1_7.jpg",
             },
             {
               id: 6,
               tit: "经营管理课程",
               cont: "美发师的职业要求、美发店工作的相关流程和注意事项、礼仪学、美发店人员的管理体系、美发店人员的培训体系、美发店的销售特点与技巧",
-              img: "mf/course_detail_mf2_6.png",
+              img: "mf/course_detail_mf1_4.jpg",
             },
           ];
           break;
@@ -1740,37 +1743,37 @@ export default {
               id: 1,
               tit: "专业美发师基础学",
               cont: "毛发理学,头皮理学、毛发结构学、脸型和头型的认识、国际标准七大要素、经典分区点线面之间的关系、日式水洗,干洗",
-              img: "mf/course_detail_mf3_1.png",
+              img: "mf/course_detail_mf1_8.jpg",
             },
             {
               id: 2,
               tit: "吹风造型系列",
               cont: "吹风工具的认识与使用、男士吹风造型男士蓬松造型、男士吹风造型男士定位造型、男士吹风造型男士时尚吹风造型、女士吹风造型中式大卷、女士吹风造型日韩吹风造型、女士吹风造型吹直吹蓬、男士吹风造型男士日韩吹风造型、女士吹风造型手吹大卷、水平外翘外斜大花时尚吹风造型、女士吹风造型欧美吹风",
-              img: "mf/course_detail_mf3_2.png",
+              img: "mf/course_detail_mf1_1.jpg",
             },
             {
               id: 3,
               tit: "染发系列",
               cont: "染发的工具和染膏,双氧的认识、染发的注意事项、染色操作全流程、国际染颜色代码的认识、商业片染的操作流程、染色,褪色,白发覆盖、多种补色操作流程、日式3D立体挑染、调彩加强色工具色的应用、漂粉及0-00的应用、染膏色素量、天然底色及天然底色色量、对冲原理、棕色系微潮色配方、光线染、多色挑染、后颈染/后劲多色染、挂耳染/挂耳多色染",
-              img: "mf/course_detail_mf3_3.png",
+              img: "mf/course_detail_mf1_6.jpg",
             },
             {
               id: 4,
               tit: "剪发系列",
               cont: "剪发工具的认识以及运用 、经典的发型分区、男士电推操作以及使用、均等裁剪、女士日韩时尚发型、男士日韩时尚发型、女士长碎发、男士板寸,圆寸,毛寸、女士短发、沙宣B0B经典裁剪、沙宣经典组合裁剪、线条与形态的处理技巧、几何学在发型设计中的运用、沙宣混合滚动性立体裁剪",
-              img: "mf/course_detail_mf3_4.png",
+              img: "mf/course_detail_mf1_3.jpg",
             },
             {
               id: 5,
               tit: "烫发系列",
               cont: "国际四大排版操作以及运用方法、国际标准离子烫,冷烫,热烫、日韩空气灵感烫、欧美立体数码烫、日本菱形烫、日韩潮流烫",
-              img: "mf/course_detail_mf3_5.png",
+              img: "mf/course_detail_mf1_7.jpg",
             },
             {
               id: 6,
               tit: "经营管理课程",
               cont: "美发师的职业要求、美发店工作的相关流程和注意事项、礼仪学、美发店人员的管理体系、美发店人员的培训体系、美发店的销售特点与技巧",
-              img: "mf/course_detail_mf3_6.png",
+              img: "mf/course_detail_mf1_4.jpg",
             },
           ];
           break;
@@ -1781,49 +1784,49 @@ export default {
               id: 1,
               tit: "专业美发师基础学",
               cont: "毛发理学,头皮理学、毛发结构学、脸型和头型的认识、国际标准七大要素、经典分区点线面之间的关系、日式水洗,干洗",
-              img: "mf/course_detail_mf4_1.png",
+              img: "mf/course_detail_mf1_8.jpg",
             },
             {
               id: 2,
               tit: "吹风造型系列",
               cont: "吹风工具的认识和使用、男士吹风造型男士莲松造型、男士吹风造型男士定位造型、男士吹风造型男士时尚吹风造型、女士吹风造型中式大卷、女士吹风造型日韩吹风造形、女士吹风造型吹直吹蓬、男士吹风造型男士日韩吹风造型、女士吹风造型欧美吹风、女士吹风造型手吹大卷、日系浪漫时尚吹风造型、尖尾梳时尚爆米花造型、水平外翘,外斜大花时尚吹风造型、日韩森系时尚吹风造型、沙宣几何吹风造型、经典的直线曲线纹理经典造型、日式翻翘女士短发造型、商业吹风造型手法及解析、国际量感吹风要诀、内层打薄、内层高层次打薄、内层低层次打薄、内层打薄的深度中度浅度、线条打薄、发根打薄、修饰剪打薄技术、平剪深刻痕,浅刻痕修饰、左右滑剪/上下滑剪打薄、飞剪技术组合、不连接大切口打薄",
-              img: "mf/course_detail_mf4_2.png",
+              img: "mf/course_detail_mf1_1.jpg",
             },
             {
               id: 3,
               tit: "染发系列",
               cont: "染发的工具和染膏,双氧的认识、染发的注意事项、染色操作全流程、国际染膏颜色代码的认识、商业片染的操作流程、日式3D立体挑染、染色,褪色和白发覆盖、多种补色操作流程、国际新潮漂染、日韩唯美花色染、两重,三重色染发操作流程、原色对冲色用法,颜色抵消,漂洗用法、色素淡化",
-              img: "mf/course_detail_mf4_3.png",
+              img: "mf/course_detail_mf1_6.jpg",
             },
             {
               id: 4,
               tit: "剪发系列",
               cont: "剪发工具的认识以及运用、经典的发型分区、男士电推操作以及使用、均等裁剪、女士日韩时尚发型、男士日韩时尚发型、女士长碎发、女士刘海分区、男士板寸,圆寸,毛寸、女士短发、女士日韩发型、沙宣BOB经典裁剪、沙宣经典组合裁剪、线条与形态的处理技巧、几何学在发型设计中的运用、三维立体空间方位定点裁剪、三维立体轮廓,重度,重感的调整、方,圆,三角及动力学的作用及操作、沙宣BOB发型、托尼盖技术原理,剪发示范、沙宣几何学的线面立体对比创造概念",
-              img: "mf/course_detail_mf4_4.png",
+              img: "mf/course_detail_mf1_3.jpg",
             },
             {
               id: 5,
               tit: "烫发系列",
               cont: "国际四大排版操作以及运用方法、国际标准离子烫,冷烫,热烫、日韩空气灵感烫、欧美立体数码烫、日韩潮流烫、日本菱形烫、三维空间固体烫、标榜烫发全过程、日式蛋卷烫发、国际新潮流组合花式烫",
-              img: "mf/course_detail_mf4_5.png",
+              img: "mf/course_detail_mf1_6.jpg",
             },
             {
               id: 6,
               tit: "盘发书法造型",
               cont: "假发的认识以及运用、经典赫本造型、日韩半丸子头、晚宴高盘发造型、经典玫瑰卷、韩式S型辫、手推水波纹、中式新娘盘发、经典中国结、日系反编三加二、气质标准高马尾、清新四叶草",
-              img: "mf/course_detail_mf4_6.png",
+              img: "mf/course_detail_mf1_5.jpg",
             },
             {
               id: 7,
               tit: "化妆课程",
               cont: "自然简约生活妆、甜心约会美妆、都市白领职业妆、韩式裸妆、潮流晚宴妆",
-              img: "mf/course_detail_mf4_7.png",
+              img: "mf/course_detail_mf1_2.jpg",
             },
             {
               id: 8,
               tit: "经营管理课程",
               cont: "美发师的职业要求、美发店工作的相关流程和注意事项、礼仪学、美发店人员的管理体系、美发店人员的培训体系、美发店的销售特点与技巧",
-              img: "mf/course_detail_mf4_8.png",
+              img: "mf/course_detail_mf1_4.jpg",
             },
           ];
           break;
@@ -1834,43 +1837,43 @@ export default {
               id: 1,
               tit: "专业美容师知识",
               cont: "皮肤的构造、皮肤的分类以及测试方法、皮肤的生长因素、皮肤的九大功能、问题性皮肤的分析及处理、面部穴位功效解析、按摩的作用及注意事项",
-              img: "qn/course_detail_qn1_1.png",
+              img: "mr/course_detail_mr1_14.jpg",
             },
             {
               id: 2,
               tit: "美容手法",
               cont: "面部微雕的手法、眼部疏通手法、肩颈部按摩的手法、纤手护理、天鹅颈、肠胃保养、胸部疏通、背部保养、温宫卵巢保养、腿部疏通、翘臀理疗、三大淋巴排毒、腹部减肥",
-              img: "qn/course_detail_qn1_2.png",
+              img: "mr/course_detail_mr1_2.jpg",
             },
             {
               id: 3,
               tit: "芳香系列",
               cont: "精油的了解、精油的分类及作用、单芳精油的调配及功效、复芳精油的功效、精油的使用方式",
-              img: "qn/course_detail_qn1_3.png",
+              img: "mr/course_detail_mr1_1.jpg",
             },
             {
               id: 4,
               tit: "中医养生",
               cont: "背部诊断、面诊、舌诊、紫竹微排、刺络放血、耳烛灸、宫寒的症状的解析、泥灸的功效及注意事项、肾部的结构及亚健康的分析、胸部的病症分析",
-              img: "qn/course_detail_qn1_4.png",
+              img: "mr/course_detail_mr1_7.jpg",
             },
             {
               id: 5,
               tit: "皮肤管理",
               cont: "小气泡的使用及功效、激光祛斑、芦荟灌肤、冰点脱毛、光子嫩肤、超声刀抗衰、MTS皮肤管理、超声波导入、韩式皮肤管理的认识、黄金焕肤术、樱花焕肤术、木乃伊焕肤术、黑脸娃娃认识及操作、铲皮仪的使用及功效",
-              img: "qn/course_detail_qn1_5.png",
+              img: "mr/course_detail_mr1_9.jpg",
             },
             {
               id: 6,
               tit: "产后康复",
               cont: "满月发汗的作用、产后做骨盆修复的重要性、骨盆变形的危害、产后腹直肌修复的必要性、盆底肌的重要性、腹直肌修复手法、通乳,排残奶的手法",
-              img: "qn/course_detail_qn1_6.png",
+              img: "mr/course_detail_mr1_10.jpg",
             },
             {
               id: 7,
               tit: "美容院营销学",
               cont: "美容的经营管理、美容院产品了解、如何处理美容院纠纷、如何锁客拓客提升客户消费、如何维护好客情及邀约休眠客户话术、美容院销售八大关、美容院的接待话术",
-              img: "qn/course_detail_qn1_7.png",
+              img: "mr/course_detail_mr1_3.jpg",
             },
           ];
           break;
@@ -1881,79 +1884,79 @@ export default {
               id: 1,
               tit: "国际高端课程",
               cont: "国际美甲概念学、美甲专业色彩调配、高端美甲培训讲师定位",
-              img: "qn/course_detail_qn2_1.png",
+              img: "mj/course_detail_mj1_1.jpg",
             },
             {
               id: 2,
               tit: "韩式半永久(眉部、眼部)",
               cont: "打磨机的操作方法及注意事项、打磨机的前置处理、打磨机的卸甲处理",
-              img: "qn/course_detail_qn2_2.png",
+              img: "mj/course_detail_mj1_11.jpg",
             },
             {
               id: 3,
               tit: "美甲喷枪款式",
               cont: "喷枪格纹、喷枪渐变、喷枪唯美彩蝶、喷枪双层花卉、喷枪日式晕染、喷枪鹌鹑蛋款、喷枪渐变法式",
-              img: "qn/course_detail_qn2_3.png",
+              img: "mj/course_detail_mj1_5.jpg",
             },
             {
               id: 4,
               tit: "时尚系列款式",
               cont: "时尚泡泡甲、刺绣花卉甲、镭射水波纹、渐变山丘甲、幻彩贝壳甲、芭蕾舞鞋甲、流行编织甲、性感蕾丝甲、秋日豹纹甲、涩味蛇纹田、初冬宝格丽、磨砂木纹甲、磨砂木纹甲、渐变菱形格纹甲、香风毛呢甲、英伦毛衣甲、烈火焰日甲、飘逸百褶裙、网红飘带甲、黑色棋盘甲、波西米亚甲、猫眼星空甲、幻彩羽毛甲、立体橙子甲、多色涂鸦甲",
-              img: "qn/course_detail_qn2_4.png",
+              img: "mj/course_detail_mj1_8.jpg",
             },
             {
               id: 5,
               tit: "各类饰品的搭配款式",
               cont: "日式干花甲、日式宝石款、日式贴纸款、美甲满钻款、鲍鱼贝壳款、永生花水晶球、极光粉的操作、转印纸的操作、日式链条的操作",
-              img: "qn/course_detail_qn2_5.png",
+              img: "mj/course_detail_mj1_5.jpg",
             },
             {
               id: 6,
               tit: "高级新娘甲系列",
               cont: "白纱新、韩式新娘甲、中式复古风",
-              img: "qn/course_detail_qn2_6.png",
+              img: "mj/course_detail_mj1_10.jpg",
             },
             {
               id: 7,
               tit: "日式晕染款式",
               cont: "简约大理石、玳瑁琥珀甲、高调翡翠甲、山水墨画甲、石膏油画甲、纸巾晕染甲、淡彩水莲甲",
-              img: "qn/course_detail_qn2_7.png",
+              img: "mj/course_detail_mj1_6.jpg",
             },
             {
               id: 8,
               tit: "高级水晕染系列款",
               cont: "水彩花卉甲、水彩玫瑰甲、水染五瓣花",
-              img: "qn/course_detail_qn2_8.png",
+              img: "mj/course_detail_mj1_4.jpg",
             },
             {
               id: 9,
               tit: "日式手绘款式",
               cont: "卡通无脸男、猫眼斑马纹、摩洛哥图腾、幻彩羽毛甲、圣诞节日款、春节新年款、彩绘米老鼠、手绘招财猫、彩绘卡通人物、晶石猫眼可爱熊、中国风手绘仙鹤",
-              img: "qn/course_detail_qn2_9.png",
+              img: "mj/course_detail_mj1_3.jpg",
             },
             {
               id: 10,
               tit: "微浮雕系列款式",
               cont: "璀璨金鱼甲、立体蝴蝶结、唯美狐狸甲",
-              img: "qn/course_detail_qn2_10.png",
+              img: "mj/course_detail_mj1_4.jpg",
             },
             {
               id: 11,
               tit: "日式立体款式",
               cont: "5D招财猫、5D茶杯犬、5D布朗熊、5D嘟嘟猪、5D财神爷、5D雕花玫瑰、5D圣诞老人、12D京剧脸谱",
-              img: "qn/course_detail_qn2_11.png",
+              img: "mj/course_detail_mj1_10.jpg",
             },
             {
               id: 12,
               tit: "花开富贵图排比系列",
               cont: "3D大排笔系列之百合花、3D大排笔系列之梅花树、3D大排笔系列之双层尖花",
-              img: "qn/course_detail_qn2_12.png",
+              img: "mj/course_detail_mj1_8.jpg",
             },
             {
               id: 13,
               tit: "店面的经营课程",
               cont: "社区群众运营、日本极致服务、树立老板形象、销售系统流程、价格的定制化、提高口才情商",
-              img: "qn/course_detail_qn2_13.png",
+              img: "mj/course_detail_mj1_9.jpg",
             },
           ];
           break;
@@ -1964,43 +1967,43 @@ export default {
               id: 1,
               tit: "专业美发师基础学",
               cont: "毛发理学,头皮理学、毛发结构学、脸型和头型的认识、国际标准七大要素、经典分区点线面之间的关系、日式水洗,干洗",
-              img: "qn/course_detail_qn3_1.png",
+              img: "mf/course_detail_mf1_8.jpg",
             },
             {
               id: 2,
               tit: "吹风造型系列",
               cont: "吹风工具的认识与使用、男士吹风造型男士蓬松造型、男士吹风造型男士定位造型、女士吹风造型中式大卷、女士吹风造型吹直吹蓬、男士吹风造型男士时尚吹风造型、女士吹风造型日韩吹风造型、女士吹风造型手吹大卷、三维立体吹风造型、日系慵懒造型、束状感卷发造型、接发系列、水品无痕、贴片式、渐变色接发、美式脏辫",
-              img: "qn/course_detail_qn3_2.png",
+              img: "mf/course_detail_mf1_1.jpg",
             },
             {
               id: 3,
               tit: "染发系列",
               cont: "染发的工具和染喜,双氧的认识、染发的注意事项、染色操作全流程、国际染膏颜色代码的认识、商业片染的操作流程、染色褪色白发覆盖、多种补色操作流程",
-              img: "qn/course_detail_qn3_3.png",
+              img: "mf/course_detail_mf1_6.jpg",
             },
             {
               id: 4,
               tit: "剪发系列",
               cont: "剪发工具的认识以及运用、经典的发型分区、男士电推操作以及使用、均等裁剪、女士长碎发、女士刘海分区、男士板寸,圆寸,毛寸、女士短发、女士日韩发型、女十日韩时尚发型、男士日韩时尚发型、沙宣B0B经典裁剪、沙宣经典组合裁剪、盖白发理论、点线面体理论、角度与切口、站姿站位、经典三角形45°C推挤重量、短碎发的剪法、刀法解析、TonIGuy剪发讲解、BOB发型设计系列、各种刘海讲解及剪法、美发男士雕刻剪发技巧、线条雕刻、男士渐变操作讲解、男士清理边缘、网红发型解析、欧式发型风格解析、日韩发型风格解析",
-              img: "qn/course_detail_qn3_4.png",
+              img: "mf/course_detail_mf1_3.jpg",
             },
             {
               id: 5,
               tit: "烫发系列",
               cont: "商业造型烫发讲解、皮卡路烫发、时尚潮流齐肩烫发奥义、欧式复古波浪卷、国际冷烫波浪烫发设计理念、国际女士波浪发、国际四大排版操作以及运用方法、国际标准离子烫、冷烫、热烫、日韩空气灵感烫、欧美立体数码烫",
-              img: "qn/course_detail_qn3_5.png",
+              img: "mf/course_detail_mf1_1.jpg",
             },
             {
               id: 6,
               tit: "色彩系列",
               cont: "对冲色讲解及运用、同色系渐变染色、多段色渐变染色、巴黎画染、三原色,色轮环讲解、各种颜色的含义及美发颜色的区别、微潮色运用",
-              img: "qn/course_detail_qn3_6.png",
+              img: "mf/course_detail_mf1_7.jpg",
             },
             {
               id: 7,
               tit: "经营管理课程",
               cont: "美发师的职业要求、美发店工作的相关流程和注意事项、礼仪学、美发店人员的管理体系、美发店人员的培训体系、美发店的销售特点与技巧",
-              img: "qn/course_detail_qn3_7.png",
+              img: "mf/course_detail_mf1_4.jpg",
             },
           ];
           break;
@@ -2011,91 +2014,91 @@ export default {
               id: 1,
               tit: "国际化妆理论实践基石",
               cont: "浅谈中国电影化妆发展简史、正确摆放和护理及拿握站姿、深度了解彩妆产品的特征与功效、时尚高级美妆新概念、时尚化妆流行趋势分析、了解面部结构与五官比列对视呈现的影响、人物脸型及面部特点分析、面部标准美及标准五官",
-              img: "qn/course_detail_qn4_1.png",
+              img: "hz/course_detail_hz6_1.png",
             },
             {
               id: 2,
               tit: "美术上层艺术",
               cont: "实用美术在化妆专业中的应用、平面素描眉眼唇、3D立体素描眉眼唇",
-              img: "qn/course_detail_qn4_2.png",
+              img: "hz/course_detail_hz6_2.png",
             },
             {
               id: 3,
               tit: "色彩学",
               cont: "色彩基础认知、色调与色系、妆容效果美人图绘制、国际美学技法研修、平面底妆的方法及运用、七大眉形的分析和技法运用、多种唇形的分析和技法运用、3D立体底妆的技法运用、韩式平涂眼妆技法、韩式渐层眼妆技法、欧美假双眼妆技法、欧美后移眼妆技法、欧美前移眼妆技法、日式烟熏眼妆技法、欧式眼妆技法、多种眼线的技法运用、面部立体修容的技法运用、多种腮红的技法运用、卷翘上下睫毛的技法运用、粘贴整段式及分段式睫毛的技法运用、粘贴下睫毛的技法运用、传统美目贴的技法运用、不同脸型与眉形的搭配、多种眼型的矫正调整",
-              img: "qn/course_detail_qn4_3.png",
+              img: "hz/course_detail_hz6_3.png",
             },
             {
               id: 4,
               tit: "国际潮流美发专修技术",
               cont: "发型基础知识、冷热工具及盘发工具认知与基本使用方法、高级手法一一倒梳、高级手法一一手打卷 、高级手法一一三加二立体反边、高级手法一一包发、高级手法一一四,五,六股编发、高级手法一一鱼骨辫编发、高级手法一一S辫编发、高级手法一一四叶草编发、高级手法一一经典中国结编发、高级手法一一内外卷发、高级手法一一3D玉米须烫发、高级手法一一标准马尾、高级手法一一复古单,双层推波、真假发结合使用、复古单双层手推波纹",
-              img: "qn/course_detail_qn4_4.png",
+              img: "hz/course_detail_hz6_4.png",
             },
             {
               id: 5,
               tit: "鱼骨轻推",
               cont: "鱼骨轻推的由来、鱼骨轻推和传统美目贴的区别、鱼骨轻推技巧步骤、鱼骨轻推5.0",
-              img: "qn/course_detail_qn4_5.png",
+              img: "hz/course_detail_hz6_5.png",
             },
             {
               id: 6,
               tit: "高级新娘甲系列",
               cont: "喷枪大普及、什么是喷枪、喷枪历史、喷枪与彩妆、喷枪颜料、喷枪的优点及功效、喷枪的正确操作方法及点线面练习、喷枪清透水润心机裸妆、高级技法一一羽化法(星芒妆)、高级技法一一反透法(冷眼看世界)、高级技法一一色彩叠加法(银河)、高级技法一一遮盖法(梦魇)、高级技法一一镂空法(天使泪)、高级技法一一催流法(涟漪)、高级技法一一粘合法(蔓延)、高级技法一一喷溅法(荼靡)、喷枪创意技法一一梦幻泡影、喷枪彩妆模板制作、DIY自己的彩妆一一将所有化妆品喷出来",
-              img: "qn/course_detail_qn4_6.png",
+              img: "hz/course_detail_hz6_6.png",
             },
             {
               id: 7,
               tit: "影视剧组伤效创造技法",
               cont: "割腕、断指、烧伤、刮伤、淤青、脓包、枪伤、腐烂效果、抓伤、咬伤、受伤无眼、各种疤痕增生、局部错位视觉、炸伤、老疤、血浆的制作、勾织胡子",
-              img: "qn/course_detail_qn4_7.png",
+              img: "hz/course_detail_hz6_7.png",
             },
             {
               id: 8,
               tit: "经典舞台戏曲设计绘制",
               cont: "舞台化妆的特点、舞台表演妆造设计、戏曲妆容搭配技巧及五官勾画技巧(人体彩绘)、装扮典型戏曲脸谱勾画",
-              img: "qn/course_detail_qn4_8.png",
+              img: "hz/course_detail_hz6_8.png",
             },
             {
               id: 9,
               tit: "高级手工技法饰品制作",
               cont: "羽毛饰品制作、手工造花制作、创意珠艺制作、古装饰品制作、T台创意夸张饰品制作、创意面具制作、造花液饰品制作、各式手缝针法",
-              img: "qn/course_detail_qn4_9.png",
+              img: "hz/course_detail_hz6_9.png",
             },
             {
               id: 10,
               tit: "中国经典影视角色设计塑造",
               cont: "秦朝时期妆容造型发展由来及特点、秦朝经典妆容造型设计、汉朝时期妆容造型发展由来及特点、汉朝经典妆容造型设计、唐朝时期造型发展由来和特点、唐朝时期妆容造型设计、宋朝时期妆容造型发展由来及特点、宋朝时期妆妆容造型设计、元朝时期妆容造型发展由来及特点、元朝时期妆妆容造型设计、明朝时期妆容造型发展由来及特点、明朝时期妆妆容造型设计、清朝时期妆容造型发展由来及特点、清朝时期妆容造型设计、韩国传统妆容造型发展由来及特点、韩国传统妆容造型设计、日本艺伎妆容造型发展由来及特点、日本艺伎妆容造型设计、埃及艳后妆容造型发展由来及特点、埃及艳后妆容造型设计、骷髅妆容造型设计、泰国妆容造型发展由来及特点、泰国妆容造型设计",
-              img: "qn/course_detail_qn4_10.png",
+              img: "hz/course_detail_hz6_10.png",
             },
             {
               id: 11,
               tit: "高级新娘整体妆造设计",
               cont: "唯美韩式新娘(丝质饰品搭配)、气质西式新娘(皇冠饰品搭配)、甜美日式新娘(鲜花饰品搭配)、复古法式新娘(帽饰饰品搭配)、新娘晚礼妆发设计、新娘旗袍妆发设计、新娘中式复古妆发设计、新娘古典中式妆发设计、新娘欧式复古妆发设计、新娘出门,仪式,敬酒妆发解析、西式短发新娘妆发设计、中式短发新娘妆发设计、复古油画风格妆发设计、国潮风格写真妆造设计、新郎妆,父亲妆、伴娘妆,妈妈妆",
-              img: "qn/course_detail_qn4_11.png",
+              img: "hz/course_detail_hz6_11.png",
             },
             {
               id: 12,
               tit: "国际现代美学风格定妆术",
               cont: "百搭休闲妆、清雅职业妆、韩式裸妆、个性时尚妆、洛丽塔妆造设计、男士造型设计、逆龄妆发设计、轻奢名媛妆法设计、晒伤妆、轻欧美混血妆发设计",
-              img: "qn/course_detail_qn4_12.png",
+              img: "hz/course_detail_hz6_1.png",
             },
             {
               id: 13,
               tit: "国际商业化明星平面整体造型",
               cont: "国际T台妆容造型设计、电视主持人妆容造型设计、明星红毯妆容造型设计、杂志封面妆容造型设计、护肤品广告妆容造型设计",
-              img: "qn/course_detail_qn4_13.png",
+              img: "hz/course_detail_hz6_2.png",
             },
             {
               id: 14,
               tit: "全面技能掌握主题练习",
               cont: "日常化妆整体造型、综合发型技巧、新娘整体造型、老年妆整体造型、战争面目全非妆造、艺术创作、古代人物造型、影视特效整体塑造",
-              img: "qn/course_detail_qn4_14.png",
+              img: "hz/course_detail_hz6_3.png",
             },
             {
               id: 15,
               tit: "化妆师职业课",
               cont: "化妆师职业要求、化妆师必备礼仪学、化妆师必备沟通学、时间管理学",
-              img: "qn/course_detail_qn4_15.png",
+              img: "hz/course_detail_hz6_4.png",
             },
           ];
           break;
@@ -2106,43 +2109,43 @@ export default {
               id: 1,
               tit: "国际化妆理论实践基石",
               cont: "威尼斯面具喷绘效果、摄影新娘喷绘效果、创意眼妆喷绘效果、广告色彩喷绘设计、羽画法理论认识、黏合发理论认识、镂空法理论认识、遮盖法理论认识、催流法理论认识、色彩叠加法理论认识、喷渐法理论认识、唯美星空喷绘效果",
-              img: "qn/course_detail_qn5_1.png",
+              img: "hz/course_detail_hz6_1.png",
             },
             {
               id: 2,
               tit: "影视人物仿妆",
               cont: "洛丽塔妆面造型设计、老年人物塑造(绘画法)、莱托小丑仿妆、青蛇仿妆、青蛇仿妆造型、敦煌飞天造型、敦煌飞天、盛唐时期妆容造型的由来及特点、大唐盛妆妆容造型设计、清朝格格妆容的由来和特点、清朝格格妆容造型设计、汉朝时期妆容造型的由来及特点、汉朝时期妆容造型设计、韩国传统传统妆容的由来及特点、韩国传统妆容造型设计、日本艺伎妆容造型由来及特点、日本艺伎妆容造型设计、埃及艳后妆容造型的由来及特点、埃及艳后妆容造型设计、印度妆容造型的由来及特点、秦朝妆容造型由来及特点、秦朝妆面造型设计、戏曲妆、宋制珍珠整体造型设计、创意古风妆面造型",
-              img: "qn/course_detail_qn5_2.png",
+              img: "hz/course_detail_hz6_2.png",
             },
             {
               id: 3,
               tit: "轻奢时尚现代",
               cont: "时尚大烟熏、复古摩登、摩登造型、轻著名媛妆面造型、国潮造型、轻欧美混血妆、厌世妆、湿推造型、国际T台秀场妆、法式公主风、舞台化妆的特点、舞台表演妆、部落女酋妆、猫头鹰妆面造型、泰妆、复古油画风、复古油画造型、蝴蝶妆、欧美妆容介绍、欧美写真拍摄妆面造型",
-              img: "qn/course_detail_qn5_3.png",
+              img: "hz/course_detail_hz6_3.png",
             },
             {
               id: 4,
               tit: "个人形象设计",
               cont: "羽毛饰品制作、创意面具制作、古装饰品制作、森系鲜花饰品制作、帽式新娘头饰制作、中国结编发、四股编、铜钱编、蝴蝶结、国际知名彩妆品牌的认识、女人穿衣的职业法则、色彩的选择和搭配、电影卧蚕的塑造及技巧、人体彩绘-局部、彩妆设计稿、仿真野生眉手绘",
-              img: "qn/course_detail_qn5_4.png",
+              img: "hz/course_detail_hz6_4.png",
             },
             {
               id: 5,
               tit: "十大艺术风格认识",
               cont: "洛可可艺术风格解析、极限主义艺术风格解析、拜占庭艺术风格解析、超现实主义艺术风格解析、国际哥特艺术风格解析、波普艺术风格解析、巴洛克艺术风格解析、新古典艺术风格解析、肖拉斐尔艺术风格解析、欧普艺术风格解析、洛可可新娘妆、轻奢巴洛克新娘妆",
-              img: "qn/course_detail_qn5_5.png",
+              img: "hz/course_detail_hz6_5.png",
             },
             {
               id: 6,
               tit: "影视特效",
               cont: "刀疤、光头制作、面目全非特效、丧尸整体人物塑造、断掌、老人妆(催皱法)、骷髅妆、创意广告特效妆、枪伤、万圣节妆容塑造",
-              img: "qn/course_detail_qn5_6.png",
+              img: "hz/course_detail_hz6_6.png",
             },
             {
               id: 7,
               tit: "专业化妆师职业专修课",
               cont: "化妆师职业要求、化妆师必备礼仪学、化妆师必备淘通学、时间管理学",
-              img: "qn/course_detail_qn5_7.png",
+              img: "hz/course_detail_hz6_7.png",
             },
           ];
           break;
@@ -2153,73 +2156,73 @@ export default {
               id: 1,
               tit: "韩式半永久的基础知识",
               cont: "韩式半永久的了解、韩式半永久工具的认识及实操、数码仪器和针的分类、各类眉毛的画法(标准眉,一字眉,轻挑眉)、根据脸型设计不同眉形、半永久行业的发展史以及未来的流行趋势、半永久与传统纹绣的区别、人体面部的黄金比例分割、半永久的禁忌人群",
-              img: "qn/course_detail_qn6_1.png",
+              img: "byj/course_detail_byj1_4.jpg",
             },
             {
               id: 2,
               tit: "韩式半永久(眉部、眼部)",
               cont: "眉部理论与操作流程、仿真线条眉仿真皮示范+练习、雾眉仿真皮示范+练习、丝雾眉仿真皮示范+练习、半永久纹绣定妆眉、魅惑美瞳线仿真皮操作、魅惑美瞳线操作技巧及护理保养、专业老师实操真人眉毛课程、魅惑美瞳线理论与操作流程、专业老师实操真人美瞳线",
-              img: "qn/course_detail_qn6_2.png",
+              img: "byj/course_detail_byj1_6.jpg",
             },
             {
               id: 3,
               tit: "韩式半永久唇部操作",
               cont: "唇形的画法、水晶润唇理论与操作流程、水晶润唇仿真皮操作技巧、唇部注意事项及术后保养",
-              img: "qn/course_detail_qn6_3.png",
+              img: "byj/course_detail_byj1_1.jpg",
             },
             {
               id: 4,
               tit: "理论知识",
               cont: "各类皮肤的操作技巧、眉毛操作后的几大问题及处理方法、面部十二宫、玄学话术之开运眉设计、激光洗眉术",
-              img: "qn/course_detail_qn6_4.png",
+              img: "byj/course_detail_byj1_4.jpg",
             },
             {
               id: 5,
               tit: "高端雾眉系列",
               cont: "海藻眉、氢氧眉、粉墨眉、高光眉、轻奢定妆眉、轻奢滚轮眉、手工拉丝雾眉、仪器粉黛眉",
-              img: "qn/course_detail_qn6_5.png",
+              img: "byj/course_detail_byj1_5.jpg",
             },
             {
               id: 6,
               tit: "仿真线条系列",
               cont: "3D飘逸眉、开运眉设计、野生眉、男士商务眉、男士野生眉、免麻仪器仙绒眉",
-              img: "qn/course_detail_qn6_6.png",
+              img: "byj/course_detail_byj1_7.jpg",
             },
             {
               id: 7,
               tit: "高端眼部系列",
               cont: "6D魅惑亮眼定妆术、手工美瞳线、沙雾美瞳线",
-              img: "qn/course_detail_qn6_7.png",
+              img: "byj/course_detail_byj1_13.jpg",
             },
             {
               id: 8,
               tit: "高端唇部系列",
               cont: "韩式手工花瓣唇、梦露红唇、时尚渐变唇、免麻仪器点雾唇部手法、唇部开运讲解",
-              img: "qn/course_detail_qn6_8.png",
+              img: "byj/course_detail_byj1_1.jpg",
             },
             {
               id: 9,
               tit: "素描系列",
               cont: "素描眉眼唇结构分析、美妆素描标准眉,男士眉、美妆素描闭眼,睁眼、美妆素描-咬唇、美妆素描-微笑唇、美妆素描-嘟嘟唇、一秒点斑祛痣",
-              img: "qn/course_detail_qn6_9.png",
+              img: "byj/course_detail_byj1_4.jpg",
             },
             {
               id: 10,
               tit: "个人形象塑造课",
               cont: "心机裸妆、职场精英妆、高冷宴会妆、开店如何选址/营销/策划、如何引流客户以及升单",
-              img: "qn/course_detail_qn6_10.png",
+              img: "byj/course_detail_byj1_8.jpg",
             },
             {
               id: 11,
               tit: "美睫理论",
               cont: "美睫上模头+练习、睫毛实操流程、美业人的必修课",
-              img: "qn/course_detail_qn6_11.png",
+              img: "byj/course_detail_byj1_4.jpg",
             },
             {
               id: 12,
               tit: "经营管理",
               cont: "韩式半永久的职业要求、店面接待流程、沟通学、礼仪学",
-              img: "qn/course_detail_qn6_12.png",
+              img: "byj/course_detail_byj1_9.jpg",
             },
           ];
           break;
@@ -2233,54 +2236,60 @@ export default {
 <style lang="less" scoped>
 .banner_swiper {
   width: 100%;
-  height: 976px;
+  height: 718px;
+  text-align: center;
 }
 /* 课程简介 */
 .courseIntro_wrap {
-  padding-bottom: 150px;
+  padding-bottom: 40px;
   .tit_wrap {
     text-align: center;
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding-top: 130px;
+    padding-bottom: 70px;
+    img {
+      width: 655px;
+      height: 104px;
+    }
     h1 {
-      font-size: 60px;
+      font-size: 45px;
       font-weight: 400;
+      margin-top: 10px;
     }
   }
   .cont_wrap {
-    width: 1290px;
+    width: 950px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     .item {
-      width: 410px;
+      width: 300px;
       border: 2px solid #727171;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px 60px;
+      padding: 20px 30px;
       .iconfont {
         color: #970518;
       }
       .icon-caizhuang-- {
-        font-size: 85px;
-        height: 130px;
+        font-size: 70px;
+        height: 112px;
         display: flex;
         align-items: center;
       }
       .icon-RectangleCopy {
-        font-size: 130px;
+        font-size: 110px;
       }
       .icon-weibiaoti1 {
-        font-size: 130px;
+        font-size: 110px;
       }
       strong {
-        font-size: 43px;
-        padding: 15px 0 55px;
+        font-size: 34px;
+        padding: 0px 0 45px;
       }
       p {
-        font-size: 23px;
-        line-height: 40px;
+        font-size: 18px;
+        line-height: 29px;
         text-align: justify;
       }
     }
@@ -2290,30 +2299,39 @@ export default {
 // 课程介绍
 .courseDetail_wrap {
   width: 100%;
-  padding-top: 100px;
-  padding-bottom: 200px;
+  padding-top: 170px;
+  padding-bottom: 235px;
   background-color: #000000;
+  margin-bottom: 105px;
   .tit_wrap {
     text-align: center;
-    margin-bottom: 130px;
+    margin-bottom: 110px;
+    img {
+      width: 650px;
+      height: 103px;
+    }
     h1 {
-      font-size: 60px;
+      font-size: 42px;
       font-weight: 400;
+      margin-top: 10px;
       color: #ffffff;
     }
   }
   .couseDetail_wrap {
+    background: url(../../assets/images/courseDetail/course_bg.jpg) no-repeat
+      left center;
     .item {
-      width: 1290px;
+      width: 950px;
       margin: 60px auto 0 auto;
       color: #ffffff;
       border: 1px dashed #ffffff;
       padding: 8px 30px 8px 8px;
       display: flex;
       .lf {
-        width: 450px;
+        width: 330px;
         img {
           width: 100%;
+          height: 220px;
         }
       }
       .rt {
@@ -2323,23 +2341,24 @@ export default {
         justify-content: flex-end;
         .tit {
           .iconfont {
-            font-size: 40px;
+            font-size: 30px;
             color: #970518;
           }
           margin-right: 10px;
+          margin-top: -2px;
         }
         .cont {
-          width: 620px;
+          width: 455px;
           h3 {
-            font-size: 32px;
+            font-size: 23px;
             margin-top: -3px;
             margin-bottom: 10px;
           }
           p {
-            font-size: 22px;
+            font-size: 16px;
             text-align: justify;
             width: 100%;
-            height: 200px;
+            height: 170px;
             overflow: auto;
           }
         }

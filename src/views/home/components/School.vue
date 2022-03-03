@@ -53,7 +53,7 @@ export default {
   data() {
     return {
       swiperOption: {
-        slidesPerView: 2.6,
+        slidesPerView: 4,
       },
     };
   },
@@ -67,11 +67,11 @@ export default {
     text-align: center;
     padding-top: 60px;
     img {
-      width: 856px;
-      height: 163px;
+      width: 550px;
+      height: 105px;
     }
     h1 {
-      font-size: 55px;
+      font-size: 40px;
       color: #ffffff;
       font-weight: 400;
     }
@@ -82,22 +82,22 @@ export default {
       margin-top: 40px;
       color: #ffffff;
       span {
-        font-size: 35px;
+        font-size: 25px;
       }
       input {
-        width: 244px;
-        height: 64px;
-        border: 3px solid #ffffff;
+        width: 200px;
+        height: 45px;
+        border: 1px solid #ffffff;
         border-radius: 10px;
         outline: none;
         background-color: #000000;
         color: #efefef;
-        font-size: 30px;
+        font-size: 20px;
         padding: 0 10px;
         margin: 0 20px;
       }
       .iconfont {
-        font-size: 50px;
+        font-size: 40px;
         color: #efefef;
         cursor: pointer;
       }
@@ -107,27 +107,27 @@ export default {
     margin-top: 75px;
     .course_swiper {
       width: 100%;
-      height: 458px;
+      height: 305px;
       img {
-        width: 691px;
-        height: 458px;
+        width: 100%;
+        height: 305px;
       }
     }
   }
   .text_wrap {
-    padding: 50px 0 0px;
+    padding: 130px 0 0px;
     text-align: center;
     color: #ffffff;
     h2 {
-      font-size: 35px;
+      font-size: 25px;
       font-weight: 400;
       margin-bottom: 20px;
     }
     p {
-      font-size: 25px;
-      width: 70%;
+      font-size: 18px;
+      width: 50%;
       margin: auto;
-      line-height: 50px;
+      line-height: 35px;
     }
   }
 }

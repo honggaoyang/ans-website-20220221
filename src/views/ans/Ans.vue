@@ -33,6 +33,7 @@
           <div class="line"></div>
           <h3>扬美中国 妆亮世界</h3>
           <img
+            class="beauty_img"
             src="@/assets/images/ans/ans_beautyBusiness.png"
             alt="扬美中国 妆亮世界"
           />
@@ -74,26 +75,28 @@
 
     <!-- 董事长信息 -->
     <div class="leaderInfo_wrap">
-      <div class="img_box">
-        <img src="@/assets/images/ans/ans_zqs.jpg" alt="" />
-      </div>
-      <div class="cont_box">
-        <p class="zqsEn">
-          <img src="@/assets/images/ans/ans_zqsEN.png" alt="" />
-        </p>
-        <article>
-          <h3>董事长：左清松</h3>
-          <p>
-            左清松，女，1972年出生于江苏连云港，艾尼斯控股董事长，女性民营企业家，20余年企业管理操盘经验，中国首批美业探索者、传播者
+      <div class="leaderInfo_box">
+        <div class="img_box">
+          <img src="@/assets/images/ans/ans_zqs.jpg" alt="" />
+        </div>
+        <div class="cont_box">
+          <p class="zqsEn">
+            <img src="@/assets/images/ans/ans_zqsEN.png" alt="" />
           </p>
-          <p>
-            左清松出生于知识分子家庭，自幼受到父母的言传身教。1998年，在全国多地考察之后，左清松来到苏州开创新的市场，一年内就成立了美容公司和化妆品公司，成功创办了植丽草、芬香格尔两大自主品牌。2002年转型美业职业教育，成立艾尼斯美妆连锁机构，二十余年来，持续为社会解决更多就业问题、为中国美业发展贡献力量。
-          </p>
-          <p>
-            如今，艾尼斯美妆连锁机构在全国多个重点城市拥有36+直营分部。左清松还成立艾尼斯控股，布局了互联网平台、人才就业平台、线上教学平台、化妆品研发和销售平台等多个矩阵，为女性打造艾尼斯轻美美容馆
-            ，主营面部护理、化妆美容、美发造型、时尚美甲等美容项目。
-          </p>
-        </article>
+          <article>
+            <h3>董事长：左清松</h3>
+            <p>
+              左清松，女，1972年出生于江苏连云港，艾尼斯控股董事长，女性民营企业家，20余年企业管理操盘经验，中国首批美业探索者、传播者
+            </p>
+            <p>
+              左清松出生于知识分子家庭，自幼受到父母的言传身教。1998年，在全国多地考察之后，左清松来到苏州开创新的市场，一年内就成立了美容公司和化妆品公司，成功创办了植丽草、芬香格尔两大自主品牌。2002年转型美业职业教育，成立艾尼斯美妆连锁机构，二十余年来，持续为社会解决更多就业问题、为中国美业发展贡献力量。
+            </p>
+            <p>
+              如今，艾尼斯美妆连锁机构在全国多个重点城市拥有36+直营分部。左清松还成立艾尼斯控股，布局了互联网平台、人才就业平台、线上教学平台、化妆品研发和销售平台等多个矩阵，为女性打造艾尼斯轻美美容馆
+              ，主营面部护理、化妆美容、美发造型、时尚美甲等美容项目。
+            </p>
+          </article>
+        </div>
       </div>
     </div>
 
@@ -108,14 +111,19 @@ export default {
   mixins: [swiperMixin],
   components: { Consult },
   data() {
-    return {};
+    return {
+      swiperOption: {
+        spaceBetween: 0,
+      },
+    };
   },
 };
 </script>
 <style lang="less" scoped>
 .course_swiper {
   width: 100%;
-  height: 694px;
+  height: 455px;
+  text-align: center;
   img {
     // width: 100%;
   }
@@ -124,77 +132,79 @@ export default {
 .intro_wrap {
   background: #ffffff;
   h1 {
-    width: 1290px;
+    width: 1130px;
     margin: auto;
-    font-size: 60px;
+    font-size: 38px;
     font-weight: 500;
     margin-top: 150px;
     margin-bottom: 40px;
   }
   .cont_wrap {
-    width: 1290px;
+    width: 1130px;
     margin: auto;
     display: flex;
     .lf_box {
-      width: 50%;
-
+      width: 550px;
       .intro_img {
-        width: 614px;
-        height: 151px;
+        width: 400px;
+        height: 98px;
+        margin-left: -5px;
       }
       .line {
-        width: 100px;
+        width: 70px;
         height: 3px;
         background-color: #000000;
-        margin: 80px 0;
+        margin: 60px 0;
       }
       h3 {
-        font-size: 50px;
+        font-size: 32px;
         font-weight: 500;
         margin-bottom: 20px;
       }
-      img {
-        margin-left: -10px;
+      .beauty_img {
+        width: 175px;
+        margin-left: -5px;
       }
     }
     .rt_box {
-      width: 50%;
+      flex: 1;
       border-left: 1px dashed #000000;
-      padding-left: 50px;
+      padding-left: 150px;
       .tit {
-        font-size: 40px;
-        margin-bottom: 50px;
+        font-size: 27px;
+        margin-bottom: 30px;
       }
       article {
-        font-size: 25px;
-        line-height: 45px;
-        margin-bottom: 50px;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 30px;
       }
       .text {
-        font-size: 25px;
-        line-height: 50px;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: bold;
       }
     }
   }
   .info_wrap {
     background-color: #f2f2f2;
-    padding: 30px 0;
+    padding: 20px 0;
     width: 100%;
     margin-top: 180px;
     .info_box {
       display: flex;
-      width: 1400px;
+      width: 850px;
       margin: auto;
       div {
         flex: 1;
         text-align: center;
         strong {
-          font-size: 70px;
+          font-size: 48px;
           color: #960519;
           font-weight: 500;
         }
         p {
-          font-size: 25px;
+          font-size: 18px;
           color: #5c5c5c;
         }
       }
@@ -205,38 +215,43 @@ export default {
 .leaderInfo_wrap {
   background-color: #000000;
   width: 100%;
-  display: flex;
-  margin-bottom: 150px;
-  .img_box {
-    width: 800px;
+  margin-bottom: 100px;
+  .leaderInfo_box {
+    width: 1200px;
+    margin: auto;
+    // background-color: #5c5c5c;
     display: flex;
-    justify-content: flex-end;
-    img {
-      width: 682px;
-      height: 995px;
-    }
-  }
-  .cont_box {
-    flex: 1;
-    .zqsEn {
-      margin-top: 80px;
+    .img_box {
+      flex: 1;
+      text-align: center;
       img {
-        width: 438px;
-        height: 187px;
-        margin-left: -15px;
+        width: 450px;
+        height: 660px;
       }
     }
-    article {
-      color: #ffffff;
-      width: 800px;
-      h3 {
-        font-size: 35px;
-        font-weight: 500;
-        margin-top: 90px;
+    .cont_box {
+      width: 530px;
+      .zqsEn {
+        margin-top: 70px;
+        img {
+          width: 290px;
+          height: 124px;
+          margin-left: -15px;
+        }
       }
-      p {
-        font-size: 22px;
-        margin-top: 50px;
+      article {
+        color: #ffffff;
+        // width: 800px;
+        h3 {
+          font-size: 24px;
+          font-weight: 500;
+          margin-top: 45px;
+        }
+        p {
+          font-size: 14px;
+          margin-top: 23px;
+          line-height: 22px;
+        }
       }
     }
   }

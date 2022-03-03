@@ -1,5 +1,9 @@
 <template>
-  <div @mouseenter="mouseEnter" @mouseleave="mouseLeave">
+  <div
+    @mouseenter="mouseEnter"
+    @mouseleave="mouseLeave"
+    style="background-color: #000000"
+  >
     <swiper ref="mySwiper" class="course_swiper" :options="swiperOption">
       <swiper-slide>
         <img src="@/assets/images/home/banner1.jpg" alt="" />
@@ -36,9 +40,11 @@ export default {
 <style lang="less" scoped>
 .course_swiper {
   width: 100%;
-  height: 873px;
+  height: 611px;
+  text-align: center;
 }
 .course_swiper img {
   // width: 100%;
+  // height: 100%;
 }
 </style>

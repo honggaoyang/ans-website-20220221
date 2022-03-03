@@ -18,6 +18,9 @@
   .lt_wrap {
     flex: 1;
     text-align: right;
+    img {
+      width: 400px;
+    }
   }
   .rt_wrap {
     flex: 1;
@@ -26,18 +29,19 @@
     justify-content: center;
 
     .text {
-      font-size: 50px;
-      font-weight: bold;
       margin-left: 150px;
+      img {
+        width: 280px;
+      }
     }
     .btn {
       margin-left: 180px;
-      width: 290px;
-      height: 90px;
+      width: 195px;
+      height: 60px;
       background-color: #980519;
       color: #ffffff;
       border: none;
-      font-size: 45px;
+      font-size: 30px;
       font-weight: bold;
       letter-spacing: 10px;
       text-indent: 10px;

@@ -29,20 +29,22 @@
 
     <!-- 课程列表 -->
     <div class="course_wrap">
-      <div
-        class="course_item"
-        v-for="courseItem in courseList"
-        :key="courseItem.id"
-      >
-        <router-link :to="courseItem.url" target="_blank">
-          <img
-            :src="require('@/assets/images/course/' + courseItem.img)"
-            alt=""
-          />
-          <h5>{{ courseItem.tit }}</h5>
-          <p>{{ courseItem.subTit }}</p>
-          <span>{{ courseItem.duration }}</span>
-        </router-link>
+      <div class="course_box">
+        <div
+          class="course_item"
+          v-for="courseItem in courseList"
+          :key="courseItem.id"
+        >
+          <router-link :to="courseItem.url" target="_blank">
+            <img
+              :src="require('@/assets/images/course/' + courseItem.img)"
+              alt=""
+            />
+            <h5>{{ courseItem.tit }}</h5>
+            <p>{{ courseItem.subTit }}</p>
+            <span>{{ courseItem.duration }}</span>
+          </router-link>
+        </div>
       </div>
     </div>
 
@@ -141,10 +143,13 @@ export default {
         { id: 4, img: "course_starTea4.png" },
         { id: 5, img: "course_starTea5.png" },
       ],
+      swiperOption: {
+        spaceBetween: 0,
+      },
       //swiper轮播配置
       swiperOption2: {
         slidesPerView: 5, // 显示多少屏
-        spaceBetween: 0, // 间隔
+        spaceBetween: 30, // 间隔
         loop: true, // 是否循环
         // 左右翻页
         navigation: {
@@ -153,7 +158,7 @@ export default {
         },
         // 轮播间隔时间
         autoplay: {
-          delay: 3000,
+          delay: 3000000,
         },
       },
     };
@@ -176,7 +181,7 @@ export default {
             { id: 2, img: "mj/courDetail_mj1_banner1.jpg" },
             { id: 3, img: "mr/courDetail_mr1_banner1.jpg" },
             { id: 4, img: "byj/courDetail_byj1_banner1.jpg" },
-            // { id: 5, img: "mf/courDetail_mf1_banner1.jpg" },
+            { id: 5, img: "mf/courDetail_mf1_banner1.jpg" },
           ];
           this.courseList = [
             {
@@ -242,6 +247,22 @@ export default {
               subTit: "掌握精湛半永久技术，高薪就业",
               duration: "15天",
               url: "/courseDetail/byj2",
+            },
+            {
+              id: 9,
+              img: "mf/course_mf_cover1.png",
+              tit: "时尚美发班",
+              subTit: "三个月变身时尚发型设计师",
+              duration: "3个月",
+              url: "/courseDetail/mf1",
+            },
+            {
+              id: 10,
+              img: "mf/course_mf_cover2.png",
+              tit: "专业美发就业班",
+              subTit: "从初级到高级轻松就业",
+              duration: "5个月",
+              url: "/courseDetail/mf2",
             },
           ];
           break;
@@ -450,11 +471,18 @@ export default {
           ];
           break;
         case "qn":
-          this.bannerDate = [{ id: 1, img: "hz/courDetail_hz1_banner1.jpg" }];
+          this.bannerDate = [
+            { id: 1, img: "qn/courDetail_qn1_banner1.jpg" },
+            { id: 1, img: "qn/courDetail_qn2_banner1.jpg" },
+            { id: 1, img: "qn/courDetail_qn3_banner1.jpg" },
+            { id: 1, img: "qn/courDetail_qn4_banner1.jpg" },
+            { id: 1, img: "qn/courDetail_qn5_banner1.jpg" },
+            { id: 1, img: "qn/courDetail_qn6_banner1.jpg" },
+          ];
           this.courseList = [
             {
               id: 1,
-              img: "hz/course_hz_cover1.png",
+              img: "qn/course_qn_cover1.jpg",
               tit: "未来之星大咖班(美容星课)",
               subTit: "培养高层次美容专业人才",
               duration: "21天",
@@ -462,7 +490,7 @@ export default {
             },
             {
               id: 2,
-              img: "hz/course_hz_cover1.png",
+              img: "qn/course_qn_cover2.jpg",
               tit: "未来之星大咖班(美甲星课)",
               subTit: "行业高标准美甲师标杆",
               duration: "21天",
@@ -470,7 +498,7 @@ export default {
             },
             {
               id: 3,
-              img: "hz/course_hz_cover1.png",
+              img: "qn/course_qn_cover3.jpg",
               tit: "未来之星大咖班(美发星课)",
               subTit: "高端美发专业人才",
               duration: "21天",
@@ -478,7 +506,7 @@ export default {
             },
             {
               id: 4,
-              img: "hz/course_hz_cover1.png",
+              img: "qn/course_qn_cover4.jpg",
               tit: "未来之星大咖班(化妆星课)",
               subTit: "高层次化妆师标杆",
               duration: "21天",
@@ -486,7 +514,7 @@ export default {
             },
             {
               id: 5,
-              img: "hz/course_hz_cover1.png",
+              img: "qn/course_qn_cover5.jpg",
               tit: "未来之星高级班(化妆星课)",
               subTit: "高级化妆师晋升之路",
               duration: "21天",
@@ -494,7 +522,7 @@ export default {
             },
             {
               id: 6,
-              img: "hz/course_hz_cover1.png",
+              img: "qn/course_qn_cover6.jpg",
               tit: "未来之星大咖班(半永久星课)",
               subTit: "高端半永久专业人才",
               duration: "21天",
@@ -507,7 +535,7 @@ export default {
           this.courseList = [
             {
               id: 1,
-              img: "hz/course_hz_cover1.png",
+              img: "mf/course_mf_cover1.png",
               tit: "时尚美发班",
               subTit: "三个月变身时尚发型设计师",
               duration: "3个月",
@@ -515,7 +543,7 @@ export default {
             },
             {
               id: 2,
-              img: "hz/course_hz_cover1.png",
+              img: "mf/course_mf_cover2.png",
               tit: "专业美发就业班",
               subTit: "从初级到高级轻松就业",
               duration: "5个月",
@@ -523,7 +551,7 @@ export default {
             },
             {
               id: 3,
-              img: "hz/course_hz_cover1.png",
+              img: "mf/course_mf_cover3.png",
               tit: "美发精品班",
               subTit: "高端美发造型师之路",
               duration: "7个月",
@@ -531,7 +559,7 @@ export default {
             },
             {
               id: 4,
-              img: "hz/course_hz_cover1.png",
+              img: "mf/course_mf_cover4.png",
               tit: "美发精英班",
               subTit: "精英美发造型师之路",
               duration: "1年",
@@ -550,41 +578,48 @@ export default {
 <style lang="less" scoped>
 .banner_swiper {
   width: 100%;
-  height: 976px;
+  height: 718px;
+  text-align: center;
 }
 
 // 课程列表
 .course_wrap {
+  width: 100%;
   background-color: #000000;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-align: center;
   padding-top: 100px;
-  .course_item {
-    a {
-      color: #ffffff;
-      width: 822px;
-      display: inline-block;
-      img {
-        width: 100%;
-        height: 537px;
-      }
-      h5 {
-        font-size: 55px;
-        font-weight: 500;
-        margin-top: 20px;
-        margin-bottom: 10px;
-      }
-      p {
-        font-size: 30px;
-      }
-      span {
-        background-color: #980518;
+  .course_box {
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    .course_item {
+      a {
+        color: #ffffff;
+        width: 555px;
         display: inline-block;
-        font-size: 35px;
-        padding: 8px 50px;
-        margin: 50px 0;
+        img {
+          width: 100%;
+          height: 360px;
+        }
+        h5 {
+          font-size: 37px;
+          font-weight: 500;
+          margin-top: 20px;
+        }
+        p {
+          font-size: 20px;
+          letter-spacing: 2px;
+          margin-top: 5px;
+        }
+        span {
+          background-color: #980518;
+          display: inline-block;
+          font-size: 25px;
+          padding: 5px 30px;
+          margin: 30px 0 50px;
+        }
       }
     }
   }
@@ -592,33 +627,43 @@ export default {
 
 // 课程优势
 .courAdv_wrap {
+  width: 100%;
+  background-color: #000000;
+  text-align: center;
   img {
-    width: 100%;
-    height: 976px;
+    width: 1500px;
+    height: 769px;
   }
 }
 
 // 明星导师
 .starTea_wrap {
   background-color: #000000;
-  padding-bottom: 200px;
+  padding-bottom: 130px;
   .tit_wrap {
     text-align: center;
     padding-top: 100px;
-    padding-bottom: 150px;
+    padding-bottom: 110px;
     img {
-      width: 892px;
-      height: 142px;
+      width: 600px;
+      height: 95px;
     }
     h1 {
-      font-size: 55px;
+      font-size: 40px;
       font-weight: 400;
       color: #ffffff;
     }
   }
   .starTea_swiper {
-    width: 100%;
-    height: 570px;
+    max-width: 1920px;
+    height: 400px;
+    .swiper-slide {
+      text-align: center;
+    }
+    img {
+      width: 270px;
+      height: 400px;
+    }
   }
 }
 
@@ -626,14 +671,14 @@ export default {
 .safe_wrap {
   .tit_wrap {
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 150px;
+    padding-top: 70px;
+    padding-bottom: 50px;
     img {
-      width: 892px;
-      height: 142px;
+      width: 650px;
+      // height: 142px;
     }
     h1 {
-      font-size: 45px;
+      font-size: 28px;
       font-weight: 400;
     }
   }
@@ -649,21 +694,21 @@ export default {
       border: 3px solid #000000;
       border-radius: 10px;
       text-align: center;
-      padding: 50px 0;
+      padding: 30px 0;
       margin-bottom: 65px;
       strong {
-        font-size: 45px;
+        font-size: 32px;
         font-weight: 500;
       }
       .line {
-        width: 60px;
-        height: 6px;
+        width: 40px;
+        height: 4px;
         background-color: #970518;
         margin: 20px auto;
       }
       p {
-        font-size: 26px;
-        line-height: 50px;
+        font-size: 19px;
+        line-height: 35px;
       }
     }
   }

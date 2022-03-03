@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="jd_wrap">
     <!-- banner -->
     <div @mouseenter="mouseEnter" @mouseleave="mouseLeave">
       <swiper ref="mySwiper" class="course_swiper" :options="swiperOption">
@@ -51,23 +51,33 @@ export default {
 };
 </script>
 <style lang="less" scoped>
+.jd_wrap {
+  background-color: #000000;
+}
+.course_swiper {
+  width: 1280px;
+  img {
+    width: 100%;
+  }
+}
 .intro_wrap {
   width: 100%;
   background: #000000;
   .art_box {
     color: #ffffff;
-    width: 1290px;
+    width: 860px;
     margin: auto;
-    font-size: 32px;
+    font-size: 22px;
     text-indent: 2em;
-    line-height: 60px;
+    line-height: 40px;
     border-top: 2px solid #ffffff;
     border-bottom: 2px solid #ffffff;
     padding: 20px 0;
   }
 }
 .brand_wrap {
-  margin-bottom: 50px;
+  width: 1280px;
+  margin: 0 auto 50px;
   img {
     width: 100%;
   }

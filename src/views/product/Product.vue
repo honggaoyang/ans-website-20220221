@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- banner -->
-    <div @mouseenter="mouseEnter" @mouseleave="mouseLeave">
+    <div @mouseenter="mouseEnter" @mouseleave="mouseLeave" class="banner_wrap">
       <swiper
         ref="mySwiper"
         class="course_swiper banner_swiper"
@@ -25,42 +25,48 @@
     </div>
 
     <!-- 学员作品 -->
-    <div class="stuWork_wrap" @mouseenter="mouseEnter" @mouseleave="mouseLeave">
-      <swiper
-        ref="mySwiper"
-        class="course_swiper stuWork_swiper"
-        :options="swiperOption2"
+    <div class="stuWork_contBox">
+      <div
+        class="stuWork_wrap"
+        @mouseenter="mouseEnter2"
+        @mouseleave="mouseLeave2"
       >
-        <swiper-slide>
-          <div class="item">
-            <img src="@/assets/images/product/product_work1.jpg" alt="" />
-            <p>美发作品</p>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="item">
-            <img src="@/assets/images/product/product_work2.jpg" alt="" />
-            <p>彩妆作品</p>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="item">
-            <img src="@/assets/images/product/product_work3.jpg" alt="" />
-            <p>美甲作品</p>
-          </div>
-        </swiper-slide>
-        <div
-          class="swiper-button-prev swiper-button-white"
-          :class="{ hide: !mouseIsEnter }"
-          slot="button-prev"
-        ></div>
+        <swiper
+          ref="mySwiper2"
+          class="course_swiper stuWork_swiper"
+          :options="swiperOption2"
+        >
+          <swiper-slide>
+            <div class="item">
+              <img src="@/assets/images/product/product_work1.jpg" alt="" />
+              <p>美发作品</p>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="item">
+              <img src="@/assets/images/product/product_work2.jpg" alt="" />
+              <p>彩妆作品</p>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="item">
+              <img src="@/assets/images/product/product_work3.jpg" alt="" />
+              <p>美甲作品</p>
+            </div>
+          </swiper-slide>
+          <div
+            class="swiper-button-prev swiper-button-white"
+            :class="{ hide: !mouseIsEnter2 }"
+            slot="button-prev"
+          ></div>
 
-        <div
-          class="swiper-button-next swiper-button-white"
-          slot="button-next"
-          :class="{ hide: !mouseIsEnter }"
-        ></div>
-      </swiper>
+          <div
+            class="swiper-button-next swiper-button-white"
+            slot="button-next"
+            :class="{ hide: !mouseIsEnter2 }"
+          ></div>
+        </swiper>
+      </div>
     </div>
 
     <!-- 咨询列表 -->
@@ -76,6 +82,7 @@ export default {
   components: { Consult },
   data() {
     return {
+      mouseIsEnter2: false,
       swiperOption2: {
         slidesPerView: 3, // 显示多少屏
         spaceBetween: 0, // 间隔
@@ -92,44 +99,79 @@ export default {
       },
     };
   },
+  computed: {
+    swiper2() {
+      return this.$refs.mySwiper2.$swiper;
+    },
+  },
+  methods: {
+    // 移入
+    mouseEnter2() {
+      this.swiper2.autoplay.stop();
+      this.mouseIsEnter2 = true;
+    },
+    // 移出
+    mouseLeave2() {
+      this.swiper2.autoplay.start();
+      this.mouseIsEnter2 = false;
+    },
+  },
 };
 </script>
 
  <style lang="less" scoped>
-.banner_swiper {
-  width: 100%;
-  height: 1356px;
+.stuWork_swiper .hide2 {
+  opacity: 0;
+  .swiper-button-next,
+  .swiper-button-prev {
+    transition: opacity 0.5s;
+  }
 }
-.stuWork_wrap {
+
+.banner_wrap {
+  width: 100%;
+  background-color: #000000;
+  .banner_swiper {
+    max-width: 1920px;
+    height: 988px;
+    text-align: center;
+  }
+}
+
+.stuWork_contBox {
   background-color: #000000;
   width: 100%;
-}
+  margin-bottom: 130px;
+  .stuWork_wrap {
+    width: 1200px;
+    margin: 0 auto;
+    .stuWork_swiper {
+      width: 1200px;
+      padding-top: 130px;
+      height: 700px;
+      text-align: center;
+      img {
+        width: 295px;
+        height: 350px;
+        // transition: all 1s;
+        // &:hover {
+        //   transform: scale(1.5, 1.5);
+        // }
+      }
+      .item {
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+          transform: scale(1.4, 1.4);
+        }
+      }
 
-.stuWork_swiper {
-  width: 100%;
-  padding-top: 200px;
-  height: 925px;
-  text-align: center;
-  img {
-    width: 400px;
-    height: 470px;
-    // transition: all 1s;
-    // &:hover {
-    //   transform: scale(1.5, 1.5);
-    // }
-  }
-  .item {
-    cursor: pointer;
-    transition: all 0.5s;
-    &:hover {
-      transform: scale(1.5, 1.5);
+      p {
+        color: #ffffff;
+        font-size: 30px;
+        padding: 30px 0;
+      }
     }
-  }
-
-  p {
-    color: #ffffff;
-    font-size: 30px;
-    padding: 30px 0;
   }
 }
 </style>

@@ -26,7 +26,7 @@
 </template>
 <style lang="less" scoped>
 .footConsult_sec {
-  height: 290px;
+  height: 200px;
   background-color: #f7f7f7;
   display: flex;
   align-items: center;
@@ -47,10 +47,10 @@
         border-right: none;
       }
       .iconfont {
-        font-size: 80px;
+        font-size: 50px;
       }
       span {
-        font-size: 30px;
+        font-size: 18px;
         margin-top: 10px;
       }
     }

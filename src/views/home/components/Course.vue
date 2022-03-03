@@ -9,25 +9,53 @@
         <swiper-slide>
           <div><img src="@/assets/images/home/home_course1.png" alt="" /></div>
           <p class="tit">
-            时尚彩妆<router-link class="more" to="">更多</router-link>
+            时尚彩妆<router-link class="more" to="/course/hz" target="_blank"
+              >更多</router-link
+            >
           </p>
         </swiper-slide>
         <swiper-slide>
           <div><img src="@/assets/images/home/home_course2.png" alt="" /></div>
           <p class="tit">
-            潮流美甲<router-link class="more" to="">更多</router-link>
+            潮流美甲<router-link class="more" to="/course/mj" target="_blank"
+              >更多</router-link
+            >
           </p>
         </swiper-slide>
         <swiper-slide>
           <div><img src="@/assets/images/home/home_course3.png" alt="" /></div>
           <p class="tit">
-            美容护肤 <router-link class="more" to="">更多</router-link>
+            美容护肤
+            <router-link class="more" to="/course/mr" target="_blank"
+              >更多</router-link
+            >
           </p>
         </swiper-slide>
         <swiper-slide>
           <div><img src="@/assets/images/home/home_course4.png" alt="" /></div>
           <p class="tit">
-            精品半永久 <router-link class="more" to="">更多</router-link>
+            精品半永久
+            <router-link class="more" to="/course/byj" target="_blank"
+              >更多</router-link
+            >
+          </p>
+        </swiper-slide>
+        <swiper-slide>
+          <div><img src="@/assets/images/home/home_course4.png" alt="" /></div>
+          <p class="tit">
+            时尚美发
+            <router-link class="more" to="/course/mf" target="_blank"
+              >更多</router-link
+            >
+          </p>
+        </swiper-slide>
+        <swiper-slide>
+          <div><img src="@/assets/images/home/home_course4.png" alt="" /></div>
+          <p class="tit">
+            美妆达人全能班
+            <router-link class="more" to="/course/qn" target="_blank"
+              >更多</router-link
+            >
           </p>
         </swiper-slide>
         <div
@@ -119,7 +147,7 @@ export default {
         msg: "",
       },
       swiperOption: {
-        slidesPerView: 3.5,
+        slidesPerView: 4,
       },
     };
   },
@@ -152,11 +180,11 @@ export default {
     text-align: center;
     padding-top: 100px;
     img {
-      width: 856px;
-      height: 163px;
+      width: 560px;
+      height: 107px;
     }
     h1 {
-      font-size: 55px;
+      font-size: 40px;
       color: #ffffff;
       font-weight: 400;
     }
@@ -165,11 +193,11 @@ export default {
     margin-top: 60px;
     margin-bottom: 100px;
     .course_swiper {
-      width: 100%;
-      height: 770px;
+      width: 1450px;
+      height: 530px;
       img {
-        width: 461px;
-        height: 689px;
+        width: 340px;
+        height: 460px;
       }
       .tit {
         color: #ffffff;
@@ -195,48 +223,49 @@ export default {
   .course_consult {
     h3 {
       color: #ffffff;
-      font-size: 35px;
+      font-size: 25px;
       text-align: center;
       font-weight: 400;
     }
     .form_wrap {
-      width: 80%;
+      width: 1100px;
       margin: 0 auto;
       .form_box {
         display: flex;
         justify-content: space-between;
         input,
         select {
-          width: 420px;
-          height: 45px;
+          width: 290px;
+          height: 35px;
           outline: none;
           border: none;
           background-color: #000000;
-          border: 3px solid #ffffff;
+          border: 1px solid #ffffff;
           color: #ffffff;
-          font-size: 20px;
+          font-size: 16px;
+          line-height: 35px;
           padding: 0 10px;
         }
         .item {
           margin-top: 30px;
           p {
-            font-size: 30px;
+            font-size: 20px;
             color: #ffffff;
             margin-bottom: 10px;
             span {
-              color: red;
-              font-size: 27px;
+              color: #980518;
+              font-size: 20px;
               padding: 0px 4px;
             }
           }
 
           .code_wrap {
             input {
-              width: 270px;
+              width: 150px;
             }
             button {
-              width: 135px;
-              height: 45px;
+              width: 130px;
+              height: 35px;
               font-size: 18px;
               outline: none;
               cursor: pointer;
@@ -248,12 +277,12 @@ export default {
       .mess_wrap {
         p {
           margin-top: 30px;
-          font-size: 30px;
+          font-size: 20px;
           color: #ffffff;
           margin-bottom: 10px;
           span {
-            color: red;
-            font-size: 27px;
+            color: #980518;
+            font-size: 20px;
             padding: 0px 4px;
           }
         }
@@ -263,9 +292,9 @@ export default {
           outline: none;
           border: none;
           background-color: #000000;
-          border: 3px solid #ffffff;
+          border: 1px solid #ffffff;
           color: #ffffff;
-          font-size: 20px;
+          font-size: 16px;
           padding: 10px;
         }
       }
@@ -273,10 +302,10 @@ export default {
       .btn {
         text-align: center;
         button {
-          width: 335px;
-          height: 60px;
-          font-size: 30px;
-          margin: 80px 0;
+          width: 220px;
+          height: 40px;
+          font-size: 20px;
+          margin: 60px 0;
           outline: none;
           cursor: pointer;
         }
