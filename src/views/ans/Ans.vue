@@ -26,7 +26,8 @@
       <div class="cont_wrap">
         <div class="lf_box">
           <img
-            class="intro_img"
+            class="intro_img wow fadeIn"
+            data-wow-duration="2s"
             src="@/assets/images/ans/ans_intro.png"
             alt="集团简介"
           />
@@ -43,29 +44,33 @@
           <article>
             艾尼斯20年匠心筑梦艾尼斯20年匠心筑梦匠心筑梦梦匠心筑梦艾尼斯20年匠心筑梦匠心筑梦艾尼斯20年匠心筑梦匠心筑梦艾尼斯20年匠心筑梦匠心筑梦艾尼斯20年匠心筑梦艾尼斯20年匠心筑梦艾尼斯20年匠心筑梦艾尼斯20年匠心筑梦艾尼斯20年匠心筑梦艾尼斯20年匠心筑梦艾尼斯20年匠心筑梦
           </article>
-          <p class="text">价值观：擎天爱人、热情、学习、传承、服务、匠心</p>
-          <p class="text">理念：厚品质、聚精英、创伟业</p>
+          <p class="text wow bounceInLeft" data-wow-duration="1s">
+            价值观：擎天爱人、热情、学习、传承、服务、匠心
+          </p>
+          <p class="text wow bounceInRight" data-wow-duration="1s">
+            理念：厚品质、聚精英、创伟业
+          </p>
         </div>
       </div>
       <div class="info_wrap">
         <div class="info_box">
-          <div>
+          <div class="wow fadeInDown">
             <strong>2002</strong>
             <p>艾尼斯教育成立</p>
           </div>
-          <div>
+          <div class="wow fadeInDown" data-wow-delay="0.2s">
             <strong>36+</strong>
             <p>校区分布</p>
           </div>
-          <div>
+          <div class="wow fadeInDown" data-wow-delay="0.4s">
             <strong>23</strong>
             <p>城市分布</p>
           </div>
-          <div>
+          <div class="wow fadeInDown" data-wow-delay="0.6s">
             <strong>500+</strong>
             <p>公司员工</p>
           </div>
-          <div>
+          <div class="wow fadeInDown" data-wow-delay="0.8s">
             <strong>500000+</strong>
             <p>累计输送人才</p>
           </div>
@@ -107,6 +112,7 @@
 <script>
 import swiperMixin from "@/mixin/swiperMixin.js";
 import Consult from "@/components/footer/Consult";
+import { WOW } from "wowjs";
 export default {
   mixins: [swiperMixin],
   components: { Consult },
@@ -116,6 +122,18 @@ export default {
         spaceBetween: 0,
       },
     };
+  },
+  mounted() {
+    this.$nextTick(() => {
+      var wow = new WOW({
+        boxClass: "wow",
+        animateClass: "animated",
+        offset: 0,
+        mobile: true,
+        live: true,
+      });
+      wow.init();
+    });
   },
 };
 </script>

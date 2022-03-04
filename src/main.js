@@ -2,6 +2,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import 'wowjs/css/libs/animate.css'
+
 // 全局引入swiper
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
