@@ -71,7 +71,10 @@
       </div>
 
       <!-- 美甲 -->
-      <div class="cont_wrap" v-if="type.indexOf('mj') != -1">
+      <div
+        class="cont_wrap"
+        v-if="type.indexOf('mj') != -1 || type.indexOf('qn2') == 0"
+      >
         <div class="item">
           <span class="iconfont icon-caizhuang--"></span>
           <strong>专业内容</strong>
@@ -98,7 +101,10 @@
       </div>
 
       <!-- 美容 -->
-      <div class="cont_wrap" v-if="type.indexOf('mr') != -1">
+      <div
+        class="cont_wrap"
+        v-if="type.indexOf('mr') != -1 || type.indexOf('qn1') == 0"
+      >
         <div class="item">
           <span class="iconfont icon-caizhuang--"></span>
           <strong>专业内容</strong>
@@ -123,7 +129,10 @@
       </div>
 
       <!-- 半永久 -->
-      <div class="cont_wrap" v-if="type.indexOf('byj') != -1">
+      <div
+        class="cont_wrap"
+        v-if="type.indexOf('byj') != -1 || type.indexOf('qn6') == 0"
+      >
         <div class="item">
           <span class="iconfont icon-caizhuang--"></span>
           <strong>专业内容</strong>
@@ -146,7 +155,10 @@
       </div>
 
       <!-- 美发 -->
-      <div class="cont_wrap" v-if="type.indexOf('mf') != -1">
+      <div
+        class="cont_wrap"
+        v-if="type.indexOf('mf') != -1 || type.indexOf('qn3') == 0"
+      >
         <div class="item">
           <span class="iconfont icon-caizhuang--"></span>
           <strong>专业内容</strong>
