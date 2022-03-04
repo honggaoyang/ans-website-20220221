@@ -111,6 +111,7 @@ export default {};
         &:hover {
           a {
             color: #980519;
+            transition: 0.2s;
           }
           .subMenu_wrap {
             display: block;
