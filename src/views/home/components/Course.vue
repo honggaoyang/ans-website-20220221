@@ -7,7 +7,9 @@
     <div class="cont_wrap" @mouseenter="mouseEnter" @mouseleave="mouseLeave">
       <swiper ref="mySwiper" class="course_swiper" :options="swiperOption">
         <swiper-slide>
-          <div><img src="@/assets/images/home/home_course1.png" alt="" /></div>
+          <div class="img_box">
+            <img src="@/assets/images/home/home_course1.png" alt="时尚彩妆" />
+          </div>
           <p class="tit">
             时尚彩妆<router-link class="more" to="/course/hz" target="_blank"
               >更多</router-link
@@ -15,7 +17,9 @@
           </p>
         </swiper-slide>
         <swiper-slide>
-          <div><img src="@/assets/images/home/home_course2.png" alt="" /></div>
+          <div class="img_box">
+            <img src="@/assets/images/home/home_course2.png" alt="潮流美甲" />
+          </div>
           <p class="tit">
             潮流美甲<router-link class="more" to="/course/mj" target="_blank"
               >更多</router-link
@@ -23,7 +27,9 @@
           </p>
         </swiper-slide>
         <swiper-slide>
-          <div><img src="@/assets/images/home/home_course3.png" alt="" /></div>
+          <div class="img_box">
+            <img src="@/assets/images/home/home_course3.png" alt="美容护肤" />
+          </div>
           <p class="tit">
             美容护肤
             <router-link class="more" to="/course/mr" target="_blank"
@@ -32,7 +38,9 @@
           </p>
         </swiper-slide>
         <swiper-slide>
-          <div><img src="@/assets/images/home/home_course4.png" alt="" /></div>
+          <div class="img_box">
+            <img src="@/assets/images/home/home_course4.png" alt="精品半永久" />
+          </div>
           <p class="tit">
             精品半永久
             <router-link class="more" to="/course/byj" target="_blank"
@@ -41,7 +49,9 @@
           </p>
         </swiper-slide>
         <swiper-slide>
-          <div><img src="@/assets/images/home/home_course4.png" alt="" /></div>
+          <div class="img_box">
+            <img src="@/assets/images/home/home_course4.png" alt="时尚美发" />
+          </div>
           <p class="tit">
             时尚美发
             <router-link class="more" to="/course/mf" target="_blank"
@@ -50,7 +60,12 @@
           </p>
         </swiper-slide>
         <swiper-slide>
-          <div><img src="@/assets/images/home/home_course4.png" alt="" /></div>
+          <div class="img_box">
+            <img
+              src="@/assets/images/home/home_course4.png"
+              alt="美妆达人全能班"
+            />
+          </div>
           <p class="tit">
             美妆达人全能班
             <router-link class="more" to="/course/qn" target="_blank"
@@ -195,9 +210,19 @@ export default {
     .course_swiper {
       width: 1450px;
       height: 530px;
-      img {
+      .img_box {
         width: 340px;
         height: 460px;
+        overflow: hidden;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: all 1s;
+        &:hover {
+          transform: scale(1.2, 1.2);
+        }
       }
       .tit {
         color: #ffffff;
