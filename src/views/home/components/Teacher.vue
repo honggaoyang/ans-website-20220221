@@ -10,70 +10,70 @@
           <div class="tea_box">
             <div class="tea_img">
               <img
-                src="@/assets/images/home/home_teacher2.png"
-                alt="马若寒老师"
+                src="@/assets/images/home/home_tea_pengchunbo.jpg"
+                alt="彭春波"
               />
             </div>
             <div class="tea_cont">
-              <p class="name">马若寒</p>
+              <p class="name">彭春波</p>
               <p class="cont">明星化妆师</p>
               <p class="cont">美学研究院副院长</p>
             </div>
             <div class="tea_img">
               <img
-                src="@/assets/images/home/home_teacher2.png"
-                alt="马若寒老师"
+                src="@/assets/images/home/home_tea_wangxiaomi.jpg"
+                alt="王小米"
               />
             </div>
             <div class="tea_cont">
-              <p class="name">马若寒</p>
+              <p class="name">王小米</p>
               <p class="cont">明星化妆师</p>
               <p class="cont">美学研究院副院长</p>
             </div>
             <div class="tea_img">
               <img
-                src="@/assets/images/home/home_teacher2.png"
-                alt="马若寒老师"
+                src="@/assets/images/home/home_tea_liyongjie.jpg"
+                alt="李永杰"
               />
             </div>
             <div class="tea_cont">
-              <p class="name">马若寒</p>
+              <p class="name">李永杰</p>
               <p class="cont">明星化妆师</p>
               <p class="cont">美学研究院副院长</p>
             </div>
           </div>
           <div class="tea_box">
             <div class="tea_cont">
-              <p class="name">马若寒</p>
+              <p class="name">时臻</p>
               <p class="cont">明星化妆师</p>
               <p class="cont">美学研究院副院长</p>
             </div>
             <div class="tea_img">
               <img
-                src="@/assets/images/home/home_teacher1.png"
-                alt="李时珍老师"
+                src="@/assets/images/home/home_tea_lishizhen.jpg"
+                alt="时臻"
               />
             </div>
             <div class="tea_cont">
-              <p class="name">马若寒</p>
+              <p class="name">王春意</p>
               <p class="cont">明星化妆师</p>
               <p class="cont">美学研究院副院长</p>
             </div>
             <div class="tea_img">
               <img
-                src="@/assets/images/home/home_teacher1.png"
-                alt="李时珍老师"
+                src="@/assets/images/home/home_tea_wangchunyi.jpg"
+                alt="王春意"
               />
             </div>
             <div class="tea_cont">
-              <p class="name">马若寒</p>
+              <p class="name">汪贵青</p>
               <p class="cont">明星化妆师</p>
               <p class="cont">美学研究院副院长</p>
             </div>
             <div class="tea_img">
               <img
-                src="@/assets/images/home/home_teacher1.png"
-                alt="李时珍老师"
+                src="@/assets/images/home/home_tea_wanggunqing.jpg"
+                alt="汪贵青"
               />
             </div>
           </div>
@@ -127,7 +127,7 @@ export default {
   .cont_wrap {
     margin-top: 80px;
     .course_swiper {
-      width: 100%;
+      max-width: 1920px;
       height: 890px;
       .tea_box {
         display: flex;

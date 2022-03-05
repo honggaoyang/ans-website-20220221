@@ -8,10 +8,11 @@
         :options="swiperOption"
       >
         <swiper-slide v-for="item in bannerDate" :key="item.id">
-          <img
-            :src="require('@/assets/images/courseDetail/' + item.img)"
-            alt=""
-          />
+          <router-link :to="item.url" target="_blank">
+            <img
+              :src="require('@/assets/images/courseDetail/' + item.img)"
+              alt=""
+          /></router-link>
         </swiper-slide>
         <div
           class="swiper-button-prev swiper-button-white"
@@ -177,11 +178,56 @@ export default {
       switch (this.type) {
         case "all":
           this.bannerDate = [
-            { id: 1, img: "hz/courDetail_hz1_banner1.jpg" },
-            { id: 2, img: "mj/courDetail_mj1_banner1.jpg" },
-            { id: 3, img: "mr/courDetail_mr1_banner1.jpg" },
-            { id: 4, img: "byj/courDetail_byj1_banner1.jpg" },
-            { id: 5, img: "mf/courDetail_mf1_banner1.jpg" },
+            {
+              id: 1,
+              img: "hz/courDetail_hz1_banner1.jpg",
+              url: "/courseDetail/hz1",
+            },
+            {
+              id: 2,
+              img: "hz/courDetail_hz2_banner1.jpg",
+              url: "/courseDetail/hz2",
+            },
+            {
+              id: 3,
+              img: "mj/courDetail_mj1_banner1.jpg",
+              url: "/courseDetail/mj1",
+            },
+            {
+              id: 4,
+              img: "mj/courDetail_mj2_banner1.jpg",
+              url: "/courseDetail/mj2",
+            },
+            {
+              id: 5,
+              img: "mr/courDetail_mr1_banner1.jpg",
+              url: "/courseDetail/mr1",
+            },
+            {
+              id: 6,
+              img: "mr/courDetail_mr2_banner1.jpg",
+              url: "/courseDetail/mr2",
+            },
+            {
+              id: 7,
+              img: "byj/courDetail_byj1_banner1.jpg",
+              url: "/courseDetail/byj1",
+            },
+            {
+              id: 8,
+              img: "byj/courDetail_byj2_banner1.jpg",
+              url: "/courseDetail/byj2",
+            },
+            {
+              id: 9,
+              img: "mf/courDetail_mf1_banner1.jpg",
+              url: "/courseDetail/mf1",
+            },
+            {
+              id: 10,
+              img: "mf/courDetail_mf2_banner1.jpg",
+              url: "/courseDetail/mf2",
+            },
           ];
           this.courseList = [
             {
@@ -268,12 +314,36 @@ export default {
           break;
         case "hz":
           this.bannerDate = [
-            { id: 1, img: "hz/courDetail_hz1_banner1.jpg" },
-            { id: 2, img: "hz/courDetail_hz2_banner1.jpg" },
-            { id: 3, img: "hz/courDetail_hz3_banner1.jpg" },
-            { id: 4, img: "hz/courDetail_hz4_banner1.jpg" },
-            { id: 5, img: "hz/courDetail_hz5_banner1.jpg" },
-            { id: 6, img: "hz/courDetail_hz6_banner1.jpg" },
+            {
+              id: 1,
+              img: "hz/courDetail_hz1_banner1.jpg",
+              url: "/courseDetail/hz1",
+            },
+            {
+              id: 2,
+              img: "hz/courDetail_hz2_banner1.jpg",
+              url: "/courseDetail/hz2",
+            },
+            {
+              id: 3,
+              img: "hz/courDetail_hz3_banner1.jpg",
+              url: "/courseDetail/hz3",
+            },
+            {
+              id: 4,
+              img: "hz/courDetail_hz4_banner1.jpg",
+              url: "/courseDetail/hz4",
+            },
+            {
+              id: 5,
+              img: "hz/courDetail_hz5_banner1.jpg",
+              url: "/courseDetail/hz5",
+            },
+            {
+              id: 6,
+              img: "hz/courDetail_hz6_banner1.jpg",
+              url: "/courseDetail/hz6",
+            },
           ];
           this.courseList = [
             {
@@ -328,12 +398,36 @@ export default {
           break;
         case "mj":
           this.bannerDate = [
-            { id: 1, img: "mj/courDetail_mj1_banner1.jpg" },
-            { id: 2, img: "mj/courDetail_mj2_banner1.jpg" },
-            { id: 3, img: "mj/courDetail_mj3_banner1.jpg" },
-            { id: 4, img: "mj/courDetail_mj4_banner1.jpg" },
-            { id: 5, img: "mj/courDetail_mj5_banner1.jpg" },
-            { id: 6, img: "mj/courDetail_mj6_banner1.jpg" },
+            {
+              id: 1,
+              img: "mj/courDetail_mj1_banner1.jpg",
+              url: "/courseDetail/mj1",
+            },
+            {
+              id: 2,
+              img: "mj/courDetail_mj2_banner1.jpg",
+              url: "/courseDetail/mj2",
+            },
+            {
+              id: 3,
+              img: "mj/courDetail_mj3_banner1.jpg",
+              url: "/courseDetail/mj3",
+            },
+            {
+              id: 4,
+              img: "mj/courDetail_mj4_banner1.jpg",
+              url: "/courseDetail/mj4",
+            },
+            {
+              id: 5,
+              img: "mj/courDetail_mj5_banner1.jpg",
+              url: "/courseDetail/mj5",
+            },
+            {
+              id: 6,
+              img: "mj/courDetail_mj6_banner1.jpg",
+              url: "/courseDetail/mj6",
+            },
           ];
           this.courseList = [
             {
@@ -388,11 +482,31 @@ export default {
           break;
         case "mr":
           this.bannerDate = [
-            { id: 1, img: "mr/courDetail_mr1_banner1.jpg" },
-            { id: 2, img: "mr/courDetail_mr2_banner1.jpg" },
-            { id: 3, img: "mr/courDetail_mr3_banner1.jpg" },
-            { id: 4, img: "mr/courDetail_mr4_banner1.jpg" },
-            { id: 5, img: "mr/courDetail_mr5_banner1.jpg" },
+            {
+              id: 1,
+              img: "mr/courDetail_mr1_banner1.jpg",
+              url: "/courseDetail/mr1",
+            },
+            {
+              id: 2,
+              img: "mr/courDetail_mr2_banner1.jpg",
+              url: "/courseDetail/mr2",
+            },
+            {
+              id: 3,
+              img: "mr/courDetail_mr3_banner1.jpg",
+              url: "/courseDetail/mr3",
+            },
+            {
+              id: 4,
+              img: "mr/courDetail_mr4_banner1.jpg",
+              url: "/courseDetail/mr4",
+            },
+            {
+              id: 5,
+              img: "mr/courDetail_mr5_banner1.jpg",
+              url: "/courseDetail/mr5",
+            },
           ];
           this.courseList = [
             {
@@ -439,9 +553,21 @@ export default {
           break;
         case "byj":
           this.bannerDate = [
-            { id: 1, img: "byj/courDetail_byj1_banner1.jpg" },
-            { id: 2, img: "byj/courDetail_byj2_banner1.jpg" },
-            { id: 3, img: "byj/courDetail_byj3_banner1.jpg" },
+            {
+              id: 1,
+              img: "byj/courDetail_byj1_banner1.jpg",
+              url: "/courseDetail/byj1",
+            },
+            {
+              id: 2,
+              img: "byj/courDetail_byj2_banner1.jpg",
+              url: "/courseDetail/byj2",
+            },
+            {
+              id: 3,
+              img: "byj/courDetail_byj3_banner1.jpg",
+              url: "/courseDetail/byj3",
+            },
           ];
           this.courseList = [
             {
@@ -472,12 +598,36 @@ export default {
           break;
         case "qn":
           this.bannerDate = [
-            { id: 1, img: "qn/courDetail_qn1_banner1.jpg" },
-            { id: 1, img: "qn/courDetail_qn2_banner1.jpg" },
-            { id: 1, img: "qn/courDetail_qn3_banner1.jpg" },
-            { id: 1, img: "qn/courDetail_qn4_banner1.jpg" },
-            { id: 1, img: "qn/courDetail_qn5_banner1.jpg" },
-            { id: 1, img: "qn/courDetail_qn6_banner1.jpg" },
+            {
+              id: 1,
+              img: "qn/courDetail_qn1_banner1.jpg",
+              url: "/courseDetail/qn1",
+            },
+            {
+              id: 1,
+              img: "qn/courDetail_qn2_banner1.jpg",
+              url: "/courseDetail/qn2",
+            },
+            {
+              id: 1,
+              img: "qn/courDetail_qn3_banner1.jpg",
+              url: "/courseDetail/qn3",
+            },
+            {
+              id: 1,
+              img: "qn/courDetail_qn4_banner1.jpg",
+              url: "/courseDetail/qn4",
+            },
+            {
+              id: 1,
+              img: "qn/courDetail_qn5_banner1.jpg",
+              url: "/courseDetail/qn5",
+            },
+            {
+              id: 1,
+              img: "qn/courDetail_qn6_banner1.jpg",
+              url: "/courseDetail/qn6",
+            },
           ];
           this.courseList = [
             {
@@ -531,7 +681,28 @@ export default {
           ];
           break;
         case "mf":
-          this.bannerDate = [{ id: 1, img: "hz/courDetail_hz1_banner1.jpg" }];
+          this.bannerDate = [
+            {
+              id: 1,
+              img: "mf/courDetail_mf1_banner1.jpg",
+              url: "/courseDetail/mf1",
+            },
+            {
+              id: 2,
+              img: "mf/courDetail_mf2_banner1.jpg",
+              url: "/courseDetail/mf2",
+            },
+            {
+              id: 3,
+              img: "mf/courDetail_mf3_banner1.jpg",
+              url: "/courseDetail/mf3",
+            },
+            {
+              id: 4,
+              img: "mf/courDetail_mf4_banner1.jpg",
+              url: "/courseDetail/mf4",
+            },
+          ];
           this.courseList = [
             {
               id: 1,

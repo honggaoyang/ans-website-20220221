@@ -40,7 +40,7 @@ export default {
 <style lang="less" scoped>
 .course_swiper {
   width: 100%;
-  height: 611px;
+  height: 732px;
   text-align: center;
 }
 .course_swiper img {

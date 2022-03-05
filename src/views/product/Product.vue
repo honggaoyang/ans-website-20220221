@@ -157,6 +157,7 @@ export default {
         // &:hover {
         //   transform: scale(1.5, 1.5);
         // }
+        // box-shadow: 0px 0px 25px #a7a5a5;
       }
       .item {
         cursor: pointer;
