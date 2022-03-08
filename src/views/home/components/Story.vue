@@ -14,13 +14,13 @@
         </swiper-slide>
 
         <div
-          class="swiper-button-prev"
+          class="swiper-button-prev swiper-button-white"
           :class="{ hide: !mouseIsEnter }"
           slot="button-prev"
         ></div>
 
         <div
-          class="swiper-button-next"
+          class="swiper-button-next swiper-button-white"
           slot="button-next"
           :class="{ hide: !mouseIsEnter }"
         ></div>

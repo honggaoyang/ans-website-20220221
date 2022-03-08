@@ -34,3 +34,20 @@ img{
 .swiper-button-prev {
   transition: opacity 0.5s;
 }
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 12px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: rgba(70, 67, 67, 0.45);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  outline: none;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: rgba(119, 118, 118, 0.45);
+}
