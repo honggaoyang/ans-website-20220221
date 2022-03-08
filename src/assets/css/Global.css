@@ -37,13 +37,13 @@ img{
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
-  font-size: 12px;
+  font-size: 12px!important;
 }
 .swiper-button-prev,
 .swiper-button-next {
   background-color: rgba(70, 67, 67, 0.45);
-  width: 36px;
-  height: 36px;
+  width: 36px !important;
+  height: 36px !important;
   border-radius: 50%;
   outline: none;
 }
