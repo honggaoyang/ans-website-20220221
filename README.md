@@ -22,10 +22,12 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 
 
-
+## 使用less
  npm install less --save
  npm install less-loader --save-dev --force  // 安装loader版本报错过高
 
+
+## 按需引入element
 
 按需引入element https://element.eleme.cn/#/zh-CN/component/quickstart#quan-ju-pei-zhi
 npm i element-ui -S
@@ -34,18 +36,18 @@ npm install babel-preset-es2015 --save-dev
 
 
 
-
+## swiper轮播
 
 https://github.com/surmon-china/vue-awesome-swiper   低版本swiper
 npm install swiper vue-awesome-swiper --save
  
-
+## 检测IE浏览器版本，版本太低给出提示
 <!-- 检测IE浏览器版本，版本太低给出提示 -->
 https://www.cnblogs.com/ordinary-yolanda/p/13541264.html
 
 
-2022.3.4 
-    1. Vue中实滚动加载动画的实现 https://blog.csdn.net/qq_45135053/article/details/108333732
+## 滚动加载动画
+    vue中实滚动加载动画的实现 https://blog.csdn.net/qq_45135053/article/details/108333732
     cnpm install wowjs --save
 
     在main.js中 引入animate.css
