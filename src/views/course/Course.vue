@@ -30,7 +30,14 @@
 
     <!-- 课程列表 -->
     <div class="course_wrap">
-      <div class="course_box">
+      <div
+        class="course_box"
+        v-lazy-container="{
+          selector: 'img',
+          error: require('@/assets/images/default-pccourse.png'),
+          loading: require('@/assets/images/default-pccourse.png'),
+        }"
+      >
         <div
           class="course_item"
           v-for="courseItem in courseList"
@@ -38,8 +45,7 @@
         >
           <router-link :to="courseItem.url" target="_blank">
             <img
-              :src="require('@/assets/images/course/' + courseItem.img)"
-              alt=""
+              :data-src="require('@/assets/images/course/' + courseItem.img)"
             />
             <h5>{{ courseItem.tit }}</h5>
             <p>{{ courseItem.subTit }}</p>

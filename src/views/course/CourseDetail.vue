@@ -196,7 +196,14 @@
         />
         <h1>课程介绍</h1>
       </div>
-      <div class="couseDetail_wrap">
+      <div
+        class="couseDetail_wrap"
+        v-lazy-container="{
+          selector: 'img',
+          error: require('@/assets/images/default-pccourse.png'),
+          loading: require('@/assets/images/default-pccourse.png'),
+        }"
+      >
         <div
           class="item"
           v-for="courItem in courseDetailDate"
@@ -204,7 +211,9 @@
         >
           <div class="lf">
             <img
-              :src="require('@/assets/images/courseDetail/' + courItem.img)"
+              :data-src="
+                require('@/assets/images/courseDetail/' + courItem.img)
+              "
               :alt="courItem.tit"
             />
           </div>

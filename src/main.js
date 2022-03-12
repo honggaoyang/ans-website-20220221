@@ -2,12 +2,18 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+// 图片懒加载
+import VueLazyload from 'vue-lazyload'
+
+// 滚动可视区域显示动画
 import 'wowjs/css/libs/animate.css'
 
 // 全局引入swiper
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
 Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
+Vue.use(VueLazyload)
+
 
 
 Vue.config.productionTip = false
