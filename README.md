@@ -90,3 +90,15 @@ https://www.cnblogs.com/ordinary-yolanda/p/13541264.html
 ## vue.config.js
 
 如果开发者需要补充或修改默认设置，需要在 package.json 同级下新建一个 vue.config.js 文件
+
+## 打包js禁止生产map文件
+
+    run dev build 打包项目后出现的list中的".map"文件最大。
+
+    “.map”文件的作用：项目打包后，代码都是经过压缩加密的，如果运行时报错，输出的错误信息无法准确得知是哪里的代码报错。 
+    有了map就可以像未加密的代码一样，准确的输出是哪一行哪一列有错。
+
+    去掉“.map”: 在运行打包前，在config/index.js中改一个参数。
+
+    productionSourceMap:false 
+    这样就在打包后没有“.map”文件
