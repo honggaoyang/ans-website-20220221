@@ -91,7 +91,7 @@ https://www.cnblogs.com/ordinary-yolanda/p/13541264.html
 
 如果开发者需要补充或修改默认设置，需要在 package.json 同级下新建一个 vue.config.js 文件
 
-## 打包js禁止生产map文件
+## 打包js禁止生成.map文件
 
     run dev build 打包项目后出现的list中的".map"文件最大。
 
