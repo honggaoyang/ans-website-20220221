@@ -40,7 +40,7 @@ npm install babel-preset-es2015 --save-dev
 
 https://github.com/surmon-china/vue-awesome-swiper   低版本swiper
 npm install swiper vue-awesome-swiper --save
- 
+
 ## 检测IE浏览器版本，版本太低给出提示
 <!-- 检测IE浏览器版本，版本太低给出提示 -->
 https://www.cnblogs.com/ordinary-yolanda/p/13541264.html
@@ -49,13 +49,13 @@ https://www.cnblogs.com/ordinary-yolanda/p/13541264.html
 ## 滚动加载动画
     vue中实滚动加载动画的实现 https://blog.csdn.net/qq_45135053/article/details/108333732
     cnpm install wowjs --save
-
+    
     在main.js中 引入animate.css
     import 'wowjs/css/libs/animate.css'
-
+    
     在组件中使用
     import { WOW } from "wowjs";
-
+    
     在mounted中使用wow
     mounted() {
         this.$nextTick(() => {
@@ -69,13 +69,13 @@ https://www.cnblogs.com/ordinary-yolanda/p/13541264.html
             wow.init();
         });
     },
-
+    
     添加动画控制, 主要控制四个属性:
     data-wow-duration: 动画持续时间
     data-wow-delay: 动画开始之前的延迟播放的时间
     data-wow-offset: 元素距离底部大于此数值时,开始播放动画
     data-wow-iteration: 动画重复的次数
-
+    
     <!--动画持续时间为2秒, 动画开始之前的延迟播放的时间为5s 元素底部距离浏览器底部400像素时开始播放动画, 动画重复次数为2次-->
     <p class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s" data-wow-offset="400" data-wow-iteration="2">从左边滑入的动画</p>
 
@@ -85,5 +85,8 @@ https://www.cnblogs.com/ordinary-yolanda/p/13541264.html
     npm install vue-lazyload --save
 
 
-    
+​    
 
+## vue.config.js
+
+如果开发者需要补充或修改默认设置，需要在 package.json 同级下新建一个 vue.config.js 文件
