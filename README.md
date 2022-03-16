@@ -1,49 +1,35 @@
-# ans-web-20220120
+## vue创建项目
+    vue create 项目名称
 
-> ans
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
-
+## 查看第三方库所有版本
+    npm view webpack versions  查看webpack所有版本
+    npm view less-loader versions  查看less-loader所有版本  
 
 ## 使用less
- npm install less --save
- npm install less-loader --save-dev --force  // 安装loader版本报错过高
 
+    直接安装 less-loader （报错）
+    原因：版本不兼容，需要安装指定版本 npm i less-loader@7  
+
+    //npm install less --save
+    //npm install less-loader --save-dev --force  // 安装loader版本报错过高
 
 ## 按需引入element
 
-按需引入element https://element.eleme.cn/#/zh-CN/component/quickstart#quan-ju-pei-zhi
-npm i element-ui -S
-npm install babel-plugin-component -D
-npm install babel-preset-es2015 --save-dev
+    按需引入element https://element.eleme.cn/#/zh-CN/component/quickstart#quan-ju-pei-zhi
+    npm i element-ui -S
+    npm install babel-plugin-component -D
+    npm install babel-preset-es2015 --save-dev
 
 
 
 ## swiper轮播
 
-https://github.com/surmon-china/vue-awesome-swiper   低版本swiper
-npm install swiper vue-awesome-swiper --save
+    https://github.com/surmon-china/vue-awesome-swiper   低版本swiper
+    npm install swiper vue-awesome-swiper --save
 
 ## 检测IE浏览器版本，版本太低给出提示
-<!-- 检测IE浏览器版本，版本太低给出提示 -->
-https://www.cnblogs.com/ordinary-yolanda/p/13541264.html
+    <!-- 检测IE浏览器版本，版本太低给出提示 -->
+    https://www.cnblogs.com/ordinary-yolanda/p/13541264.html
 
 
 ## 滚动加载动画
@@ -83,22 +69,20 @@ https://www.cnblogs.com/ordinary-yolanda/p/13541264.html
 
     https://www.jianshu.com/p/4f3f79a0d7ce
     npm install vue-lazyload --save
-
-
 ​    
 
-## vue.config.js
-
-如果开发者需要补充或修改默认设置，需要在 package.json 同级下新建一个 vue.config.js 文件
+## 配置修改 webpack 
+    创建 vue.config.js
+    如果开发者需要补充或修改默认设置，需要在 package.json 同级下新建一个 vue.config.js 文件
 
 ## 打包js禁止生成.map文件
 
     run dev build 打包项目后出现的list中的".map"文件最大。
 
     “.map”文件的作用：项目打包后，代码都是经过压缩加密的，如果运行时报错，输出的错误信息无法准确得知是哪里的代码报错。 
-    有了map就可以像未加密的代码一样，准确的输出是哪一行哪一列有错。
+        有了map就可以像未加密的代码一样，准确的输出是哪一行哪一列有错。
 
-    去掉“.map”: 在运行打包前，在config/index.js中改一个参数。
+        去掉“.map”: 在运行打包前，在config/index.js中改一个参数。
 
-    productionSourceMap:false 
-    这样就在打包后没有“.map”文件
+        productionSourceMap:false 
+        这样就在打包后没有“.map”文件
