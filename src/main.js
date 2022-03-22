@@ -18,13 +18,12 @@ Vue.use(VueLazyload)
 
 Vue.config.productionTip = false
 
-// 根据路由设置标题
-router.beforeEach((to, from, next) => {
+// <!-- 全局后置路由守卫 每次路由切换之后被调用、初始化的时候被调用 -->
+router.afterEach((to, from) => {
   /*路由发生改变修改页面的title */
   if (to.meta.title) {
-    document.title = "艾尼斯美妆连锁机构-" + to.meta.title
+    document.title = "艾尼斯美妆连锁机构-" + to.meta.title || '艾尼斯美妆连锁机构'
   }
-  next();
 })
 
 
